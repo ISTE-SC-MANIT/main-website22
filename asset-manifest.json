@@ -1,16 +1,22 @@
 {
   "files": {
-    "main.css": "/main-website22/static/css/main.c1b91c52.css",
-    "main.js": "/main-website22/static/js/main.35ca42f6.js",
+    "main.css": "/main-website22/static/css/main.c6a6dcc3.css",
+    "main.js": "/main-website22/static/js/main.cfe42ec5.js",
     "static/js/787.0c4dd52e.chunk.js": "/main-website22/static/js/787.0c4dd52e.chunk.js",
+    "static/media/flairHaven.jpg": "/main-website22/static/media/flairHaven.3c83cd99b52a390703e8.jpg",
+    "static/media/chimerax.jpg": "/main-website22/static/media/chimerax.95e0eb0254876359a9ae.jpg",
+    "static/media/codathon.jpg": "/main-website22/static/media/codathon.e9c32e0cc379c87c02ee.jpg",
+    "static/media/anubhuti.jpg": "/main-website22/static/media/anubhuti.595a86472bd2d615d4cc.jpg",
+    "static/media/megatrep.jpg": "/main-website22/static/media/megatrep.e3bf58751c351df6ce04.jpg",
+    "static/media/versionBeta.jpg": "/main-website22/static/media/versionBeta.8c2d3eb2e60c63af5b1d.jpg",
     "static/media/ISTElogo.svg": "/main-website22/static/media/ISTElogo.a74f1bcec9b36f8b044934b3c92f6b69.svg",
     "index.html": "/main-website22/index.html",
-    "main.c1b91c52.css.map": "/main-website22/static/css/main.c1b91c52.css.map",
-    "main.35ca42f6.js.map": "/main-website22/static/js/main.35ca42f6.js.map",
+    "main.c6a6dcc3.css.map": "/main-website22/static/css/main.c6a6dcc3.css.map",
+    "main.cfe42ec5.js.map": "/main-website22/static/js/main.cfe42ec5.js.map",
     "787.0c4dd52e.chunk.js.map": "/main-website22/static/js/787.0c4dd52e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c1b91c52.css",
-    "static/js/main.35ca42f6.js"
+    "static/css/main.c6a6dcc3.css",
+    "static/js/main.cfe42ec5.js"
   ]
 }
