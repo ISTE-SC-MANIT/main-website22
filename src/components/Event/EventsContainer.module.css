@@ -1,4 +1,30 @@
 .eventContainer{
-    width: 30%;
+    width:80%;
     z-index:10;
+    margin: auto;
+    display: grid;
+    margin: auto;
+    grid-template-columns: 47.5% 5% 47.5%;
+    place-items: center;
+
+    padding: 50px;
+ 
+    /* border: 1px solid rgb(17, 31, 85); */
+}
+
+.heading{
+    color:white;
+    text-align: center;
+    margin: 1em;
+}
+
+@media (max-width: 1000px){
+    .eventContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding:25px;
+        width: 88%;
+    }
 }

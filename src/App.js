@@ -14,6 +14,8 @@ function App() {
 		<>
 			<Navbar />
 			<Header></Header>
+			<EventsContainer />
+			<BreakLine />
 			<Sponsors></Sponsors>
 		</>
 	);
