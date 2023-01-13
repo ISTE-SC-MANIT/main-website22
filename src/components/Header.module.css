@@ -1,0 +1,15 @@
+.headDiv{
+    width: 80%;
+    height: 100vh;
+    color: whitesmoke;
+
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+
+    padding: 1em;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
