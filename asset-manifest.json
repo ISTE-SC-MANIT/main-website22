@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.c1b91c52.css",
-    "main.js": "/static/js/main.291b7221.js",
-    "static/js/787.0c4dd52e.chunk.js": "/static/js/787.0c4dd52e.chunk.js",
-    "static/media/ISTElogo.svg": "/static/media/ISTElogo.a74f1bcec9b36f8b044934b3c92f6b69.svg",
-    "index.html": "/index.html",
-    "main.c1b91c52.css.map": "/static/css/main.c1b91c52.css.map",
-    "main.291b7221.js.map": "/static/js/main.291b7221.js.map",
-    "787.0c4dd52e.chunk.js.map": "/static/js/787.0c4dd52e.chunk.js.map"
+    "main.css": "/main-website2022/static/css/main.c1b91c52.css",
+    "main.js": "/main-website2022/static/js/main.47817bb0.js",
+    "static/js/787.0c4dd52e.chunk.js": "/main-website2022/static/js/787.0c4dd52e.chunk.js",
+    "static/media/ISTElogo.svg": "/main-website2022/static/media/ISTElogo.a74f1bcec9b36f8b044934b3c92f6b69.svg",
+    "index.html": "/main-website2022/index.html",
+    "main.c1b91c52.css.map": "/main-website2022/static/css/main.c1b91c52.css.map",
+    "main.47817bb0.js.map": "/main-website2022/static/js/main.47817bb0.js.map",
+    "787.0c4dd52e.chunk.js.map": "/main-website2022/static/js/787.0c4dd52e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c1b91c52.css",
-    "static/js/main.291b7221.js"
+    "static/js/main.47817bb0.js"
   ]
 }
