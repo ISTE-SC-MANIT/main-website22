@@ -16,7 +16,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/Twitter';
-import logoIste from '../../assets/ISTElogo.png';
+import logoIste from '../../assets/Istelogo.png';
 const Footer = () => {
 	return (
 		<Paper sx={{ backgroundColor: '#2d3843' }}>
@@ -45,7 +45,7 @@ const Footer = () => {
 					}}
 				>
 					<img
-						src={`	http://localhost:3000/main-website22/static/media/ISTElogo.77cdce8ad0fdc0ae9997beba797d9de5.svg
+						src={`	${logoIste}
 `}
 						alt=""
 						style={{ width: '100%', marginTop: '3rem' }}
