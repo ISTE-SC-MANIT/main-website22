@@ -3,93 +3,224 @@ import { Box, display, height } from '@mui/system';
 import { Typography } from '@mui/material';
 import { Stack } from '@mui/material';
 import Grid from '@mui/material/Grid';
-import { Button } from '@mui/material';
+import { Button, Card, CardMedia } from '@mui/material';
 import { Paper } from '@mui/material';
 import { TextField } from '@mui/material';
 import ImgPath from '../../assets/sponsors/conding-ninja-white.png';
-// import data from '../../assets/sponsors/tp';
+import { hover } from '@testing-library/user-event/dist/hover';
 
+// import sponsors from '../../assets/sponsors';
+
+const data = [
+	{
+		id: 0,
+		image: require(`../../assets/sponsors/coding-ninjas-logos-idFrWdCkB5.png`),
+		path: `https://bit.ly/3Updcil`,
+	},
+	{
+		id: 1,
+		image: require(`../../assets/sponsors/ekeeda-logo.png`),
+		path: 'https://ekeeda.com/',
+	},
+	{
+		id: 2,
+		image: require(`../../assets/sponsors/taskade-circle-logo-full-black.png`),
+		path: 'https://www.taskade.com/',
+	},
+	{
+		id: 3,
+		image: require(`../../assets/sponsors/Celo Logo Color@2x.png`),
+		path: null,
+	},
+	{
+		id: 4,
+		image: require(`../../assets/sponsors/Devfolio_Logo-Colored.png`),
+		path: 'https://devfolio.co/home/',
+	},
+	{
+		id: 5,
+		image: require(`../../assets/sponsors/Diginique Techlabs.png`),
+		path: 'https://diginique.com/',
+	},
+	{
+		id: 6,
+		image: require(`../../assets/sponsors/echo3D - Logo 2021 - Dark.png`),
+		path: 'https://www.echo3d.com/',
+	},
+	{
+		id: 7,
+		image: require(`../../assets/sponsors/ELearnmarket Logo.png`),
+		path: 'https://www.elearnmarkets.com/?utm_source=google.com&utm_medium=cpc&utm_campaign=branding-search',
+	},
+	{
+		id: 8,
+		image: require(`../../assets/sponsors/engi-circle.png`),
+		path: '',
+	},
+	{
+		id: 9,
+		image: require(`../../assets/sponsors/Filecoin Coloured White Text.png`),
+		path: 'https://filecoin.io/',
+	},
+	{
+		id: 10,
+		image: require(`../../assets/sponsors/foxmula.png`),
+		path: '',
+	},
+	{
+		id: 11,
+		image: require(`../../assets/sponsors/GDG Chapter lockup - GDG Bhopal.png`),
+		path: 'https://gdg.community.dev/gdg-cloud-bhopal/',
+	},
+	{
+		id: 12,
+		image: require(`../../assets/sponsors/GitHub_Logo.png`),
+		path: 'https://github.com/',
+	},
+	// {
+	// 	id: 13,
+	// 	image: require(`../../assets/sponsors/GMC LogoS.png`),
+	// 	path: '',
+	// },
+	{
+		id: 14,
+		image: require(`../../assets/sponsors/GUVI-logo-black-1024x496.png`),
+		path: 'https://www.guvi.in/',
+	},
+	{
+		id: 15,
+		image: require(`../../assets/sponsors/hoverRobotix.png`),
+		path: 'https://hoverrobotix.com/',
+	},
+	{
+		id: 16,
+		image: require(`../../assets/sponsors/IMG_7747 2.PNG`),
+		path: '',
+	},
+	{
+		id: 17,
+		image: require(`../../assets/sponsors/IMG_7748.PNG`),
+		path: 'https://www.yhills.in/',
+	},
+	{
+		id: 18,
+		image: require(`../../assets/sponsors/lnguify-white-2.png`),
+		path: 'https://www.languify.in/',
+	},
+	{
+		id: 19,
+		image: require(`../../assets/sponsors/Mentor.x.png`),
+		path: 'https://thementorx.com',
+	},
+	{
+		id: 20,
+		image: require(`../../assets/sponsors/myways.jpeg`),
+		path: 'https://myways.ai/',
+	},
+	{
+		id: 21,
+		image: require(`../../assets/sponsors/Polygon_Logo-Dark.png`),
+		path: 'https://polygon.technology/',
+	},
+	{
+		id: 22,
+		image: require(`../../assets/sponsors/download.png`),
+		path: 'https://replit.com/',
+	},
+	{
+		id: 23,
+		image: require(`../../assets/sponsors/seekho.jpeg`),
+		path: '',
+	},
+	{
+		id: 24,
+		image: require(`../../assets/sponsors/sfc-white.png`),
+		path: '',
+	},
+	{
+		id: 25,
+		image: require(`../../assets/sponsors/solona_b.png`),
+		path: 'https://solana.com/',
+	},
+	{
+		id: 26,
+		image: require(`../../assets/sponsors/stand-out-stickers-logo.png`),
+		path: '',
+	},
+	{
+		id: 27,
+		image: require(`../../assets/sponsors/sponsor.png`),
+		path: '',
+	},
+	{
+		id: 28,
+		image: require(`../../assets/sponsors/techcryptors.png`),
+		path: '',
+	},
+	{
+		id: 29,
+		image: require(`../../assets/sponsors/Tezos_Logo-Colored@2x.png`),
+		path: 'https://tezos.com/',
+	},
+	{
+		id: 30,
+		image: require(`../../assets/sponsors/Foxmula-logo-black-365x365.png`),
+		path: '',
+	},
+];
 const Sponsors = () => {
-	const data = [
-		{
-			id: 0,
-			image: '../../assets/sponsors/theSandwich-white.png',
-		},
-	];
-	console.log(data);
 	return (
-		<Paper sx={{ marginTop: '2rem' }}>
-			<Typography variant="h3" sx={{ textAlign: 'center' }}>
+		<Paper sx={{ marginTop: '2rem', marginBottom: '5rem' }}>
+			<Typography
+				variant="h3"
+				size="small"
+				sx={{ textAlign: 'center', color: 'black', padding: '2rem' }}
+			>
 				Our Sponsors
 			</Typography>
 
 			<Grid
 				container
-				spacing={3}
-				sx={{ alignItems: 'center', justifyContent: 'center' }}
+				sx={{
+					alignItems: 'center',
+					justifyContent: 'center',
+					paddingBottom: '2rem',
+				}}
 			>
-				<Grid item>
-					<div
-						style={{
-							backgroundColor: 'red',
-							textAlign: 'center',
-							height: '200px',
-							width: '200px',
-						}}
-					>
-						Item 1
-					</div>
-				</Grid>
-				<Grid item>
-					<div
-						style={{
-							backgroundColor: 'red',
-							textAlign: 'center',
-							height: '200px',
-							width: '200px',
-						}}
-					>
-						Item 1
-					</div>
-				</Grid>
-				<Grid item>
-					<div
-						style={{
-							backgroundColor: 'red',
-							textAlign: 'center',
-							height: '200px',
-							width: '200px',
-						}}
-					>
-						Item 1
-					</div>
-				</Grid>
-				<Grid item>
-					<div
-						style={{
-							backgroundColor: 'red',
-							textAlign: 'center',
-							height: '200px',
-							width: '200px',
-						}}
-					>
-						Item 1
-					</div>
-				</Grid>
-				<Grid item>
-					<div
-						style={{
-							backgroundColor: 'red',
-							textAlign: 'center',
-							height: '200px',
-							width: '200px',
-						}}
-					>
-						Item 1
-					</div>
-				</Grid>
+				{data.map((spo, index) => (
+					<a href={spo.path} target={'__blank'} style={{}}>
+						<Grid
+							item
+							spacing={1}
+							key={spo.id}
+							sx={{
+								backgroundColor: '#ECECED',
+								padding: '0',
+								borderRadius: '10px',
+								margin: '0.6rem',
+							}}
+						>
+							<div
+								style={{
+									borderRadius: '10px',
+									height: '200px',
+									width: '200px',
+									display: 'flex',
+									justifyContent: 'center',
+									alignItems: 'center',
+								}}
+							>
+								<img
+									src={spo.image}
+									alt=""
+									style={{ height: 'auto', width: '95%', borderRadius: '10px' }}
+									loading="lazy"
+								/>
+							</div>
+						</Grid>
+					</a>
+				))}
 			</Grid>
-			<img src={ImgPath} alt="" />
 		</Paper>
 	);
 };
