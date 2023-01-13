@@ -7,8 +7,16 @@ import { Button } from '@mui/material';
 import { Paper } from '@mui/material';
 import { TextField } from '@mui/material';
 import ImgPath from '../../assets/sponsors/conding-ninja-white.png';
+// import data from '../../assets/sponsors/tp';
 
 const Sponsors = () => {
+	const data = [
+		{
+			id: 0,
+			image: '../../assets/sponsors/theSandwich-white.png',
+		},
+	];
+	console.log(data);
 	return (
 		<Paper sx={{ marginTop: '2rem' }}>
 			<Typography variant="h3" sx={{ textAlign: 'center' }}>
@@ -81,6 +89,7 @@ const Sponsors = () => {
 					</div>
 				</Grid>
 			</Grid>
+			<img src={ImgPath} alt="" />
 		</Paper>
 	);
 };
