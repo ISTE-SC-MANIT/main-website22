@@ -9,8 +9,8 @@ const Header=props=>{
         <div className={style.headDiv}>
             <BreakLine/>
             <h1>ISTE SC MANIT</h1>
-            <h2>Best Students' Chapter in Madhya Pradesh-Chhattisgarh Region from 3 consecutive years.
-            </h2>
+            <h3>Best Students' Chapter in Madhya Pradesh-Chhattisgarh Region from 3 consecutive years.
+            </h3>
             <BreakLine />
         </div>
     );

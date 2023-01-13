@@ -11,7 +11,8 @@ function App() {
     <>
       <Navbar/>
       <Header/>
-      {/* <EventsContainer/> */}
+      <EventsContainer/>
+      <BreakLine/>
     </>
   );
 }
