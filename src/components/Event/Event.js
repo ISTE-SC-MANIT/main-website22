@@ -7,7 +7,7 @@ import Button from '../UI/Button'
 const Event=props=>{
     return(
         <div className={style.eventStyle}>
-            <EventImage src={props.imageSrc}/>
+            <EventImage src={props.imageSrc} onClick={props.handler}/>
             <Button name={props.name} onClick={props.handler}>Know More</Button>
         </div>
     );
