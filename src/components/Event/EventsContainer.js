@@ -1,15 +1,12 @@
-import React from "react";
+import React, {useState} from "react";
 
 import Event from "./Event";
 
 import style from './EventsContainer.module.css';
-// import vb from '../../assets/EventImages/versionBeta.jpg'
-
-// import s from '../../../public/EventImages/versionBeta.jpg';
-
+import EventModal from "../EventModal/EventModal";
 
 const data=[
-    {
+    {   id:0,
         name:"versionBeta",
         heading:"Version Beta",
         title:"IDE for your code !",
@@ -23,7 +20,8 @@ const data=[
     {
         name: "div"
     },
-    {
+    {   
+        id:2,
         name: "flairHaven",
         heading: "Flair Haven",
         title: "A series of immersive Workshops",
@@ -36,6 +34,7 @@ const data=[
     },
 
     {
+        id:3,
         name: "codathon",
         heading: "Codathon",
         title: "Coding Contest",
@@ -49,6 +48,7 @@ const data=[
         name: "div"
     },
     {
+        id:5,
         name: "megatrep",
         heading: "Megatreopuz",
         title: "Online Cryptic Hunt!!!",
@@ -60,6 +60,7 @@ const data=[
     },
 
     {
+        id:6,
         name: "chimerax",
         heading: "CHIMERA-X",
         title: "Quizzing Contest",
@@ -73,6 +74,7 @@ const data=[
         name:"div"
     },
     {
+        id:8,
         name: "anubhuti",
         heading: "ANUBHUTI",
         title: "Unfloding Hidden Stories!",
@@ -84,11 +86,21 @@ const data=[
     }
 ];
 
-
 const EventsContainer = props => {
+
+    const [modalVisible, setModalVisible]=useState(false);
+    const [modalData, setModalData]=useState();
+    
     const knowMoreHandler=(event)=>{
-        console.log(event.target.name);
+        setModalVisible(true);
+        setModalData(data[+event.target.name]);
     }
+
+    const closeModal=(event)=>{
+        setModalVisible(false);
+        setModalData();
+    }
+
     return (
         <>
             <h1 className={style.heading}>Our Events</h1>
@@ -99,10 +111,11 @@ const EventsContainer = props => {
                         event.name==="div"?(
                             <div></div>
                         ):(
-                            <Event name={event.name} onClick={knowMoreHandler} handler={knowMoreHandler} imageSrc={require(`../../assets/EventImages/${event.name}.jpg`)} />
+                            <Event name={event.id} onClick={knowMoreHandler} handler={knowMoreHandler} imageSrc={require(`../../assets/EventImages/${event.name}.jpg`)} />
                         )    
                     )
                 }
+            {modalVisible && <EventModal onCloseModal={closeModal}  eventData={modalData}/>}
             </div>
         </>
     );
