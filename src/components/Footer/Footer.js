@@ -16,7 +16,9 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/Twitter';
-import logoIste from '../../assets/ISTElogo.png';
+import logoIste from '../../assets/Istelogo.png';
+import { Tooltip } from '@mui/material';
+
 const Footer = () => {
 	return (
 		<Paper sx={{ backgroundColor: '#2d3843' }}>
@@ -182,29 +184,37 @@ const Footer = () => {
 					</div>
 				</Grid>
 			</Grid>
-			<Paper sx={{ paddingBottom: '2rem', backgroundColor: '#2d3843' }}>
+			<Paper sx={{ paddingBottom: '4rem', backgroundColor: '#2d3843' }}>
 				<Grid>
 					<Typography sx={{ textAlign: 'center' }}>
 						<Button sx={{ color: 'white', outline: 'white' }}>
 							<LinkIcon></LinkIcon> <Typography>Social Links</Typography>
 						</Button>
 						<div>
-							<Button title="linkedin">
-								<LinkedInIcon></LinkedInIcon>
-							</Button>
-							<Button title="instagram">
-								<InstagramIcon
-									sx={{
-										color: '#E1306C',
-									}}
-								></InstagramIcon>
-							</Button>
-							<Button title="facebook">
-								<FacebookIcon></FacebookIcon>
-							</Button>
-							<Button title="twitter">
-								<TwitterIcon sx={{ color: '#1DA1F2' }}></TwitterIcon>
-							</Button>
+							<Tooltip title="Linkedin" arrow>
+								<Button>
+									<LinkedInIcon></LinkedInIcon>
+								</Button>
+							</Tooltip>
+							<Tooltip title="Instagram" arrow>
+								<Button>
+									<InstagramIcon
+										sx={{
+											color: '#E1306C',
+										}}
+									></InstagramIcon>
+								</Button>
+							</Tooltip>
+							<Tooltip title="FaceBook" arrow>
+								<Button>
+									<FacebookIcon></FacebookIcon>
+								</Button>
+							</Tooltip>
+							<Tooltip title="Twitter" arrow>
+								<Button>
+									<TwitterIcon sx={{ color: '#1DA1F2' }}></TwitterIcon>
+								</Button>
+							</Tooltip>
 						</div>
 					</Typography>
 				</Grid>
