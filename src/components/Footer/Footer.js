@@ -32,27 +32,10 @@ const Footer = () => {
 					// backgroundColor: 'red',
 					width: '100%',
 				}}
-				columnGap={15}
+				columnGap={20}
 				// fullWidth
 				// spacing={18}
 			>
-				<Grid
-					item
-					sx={{
-						width: '200px',
-						margin: '0.7rem',
-						height: '140px',
-						justifyContent: 'center',
-						alignItems: 'center',
-					}}
-				>
-					<img
-						src={`	${logoIste}
-`}
-						alt=""
-						style={{ width: '100%', marginTop: '3rem' }}
-					/>
-				</Grid>
 				<Grid
 					item
 					sx={{
@@ -168,57 +151,71 @@ const Footer = () => {
 						>
 							<Typography>istescmanit@gmail.com</Typography>
 						</a>
-						<Stack
-							sx={{ marginTop: '1.5rem', width: '260px' }}
-							spacing={2}
-							direction="row"
+						<Paper
+							sx={{
+								backgroundColor: '#2d3843',
+								width: '150%',
+								// padding: '1rem',
+								//
+							}}
 						>
-							<TextField
-								sx={{ color: 'white', outline: 'white' }}
-								label="Message"
-								size="small"
-								color="warning"
-							></TextField>
-							<Button variant="contained">Send</Button>
-						</Stack>
+							<Grid>
+								<Typography sx={{ textAlign: 'center' }}>
+									<Button sx={{ color: 'white', outline: 'white' }}>
+										<LinkIcon></LinkIcon> <Typography>Social Links</Typography>
+									</Button>
+									<div>
+										<Tooltip title="Linkedin" arrow>
+											<Button>
+												<LinkedInIcon></LinkedInIcon>
+											</Button>
+										</Tooltip>
+										<Tooltip title="Instagram" arrow>
+											<Button>
+												<InstagramIcon
+													sx={{
+														color: '#E1306C',
+													}}
+												></InstagramIcon>
+											</Button>
+										</Tooltip>
+										<Tooltip title="FaceBook" arrow>
+											<Button>
+												<FacebookIcon></FacebookIcon>
+											</Button>
+										</Tooltip>
+										<Tooltip title="Twitter" arrow>
+											<Button>
+												<TwitterIcon sx={{ color: '#1DA1F2' }}></TwitterIcon>
+											</Button>
+										</Tooltip>
+									</div>
+								</Typography>
+							</Grid>
+						</Paper>
 					</div>
 				</Grid>
 			</Grid>
-			<Paper sx={{ paddingBottom: '4rem', backgroundColor: '#2d3843' }}>
-				<Grid>
-					<Typography sx={{ textAlign: 'center' }}>
-						<Button sx={{ color: 'white', outline: 'white' }}>
-							<LinkIcon></LinkIcon> <Typography>Social Links</Typography>
-						</Button>
-						<div>
-							<Tooltip title="Linkedin" arrow>
-								<Button>
-									<LinkedInIcon></LinkedInIcon>
-								</Button>
-							</Tooltip>
-							<Tooltip title="Instagram" arrow>
-								<Button>
-									<InstagramIcon
-										sx={{
-											color: '#E1306C',
-										}}
-									></InstagramIcon>
-								</Button>
-							</Tooltip>
-							<Tooltip title="FaceBook" arrow>
-								<Button>
-									<FacebookIcon></FacebookIcon>
-								</Button>
-							</Tooltip>
-							<Tooltip title="Twitter" arrow>
-								<Button>
-									<TwitterIcon sx={{ color: '#1DA1F2' }}></TwitterIcon>
-								</Button>
-							</Tooltip>
-						</div>
-					</Typography>
+			<Grid container sx={{ justifyContent: 'center' }}>
+				<Grid
+					item
+					sx={{
+						width: '200px',
+						// margin: '0.7rem',
+						height: '140px',
+						justifyContent: 'center',
+						alignItems: 'center',
+					}}
+				>
+					<img
+						src={`	${logoIste}
+`}
+						alt=""
+						style={{ width: '100%' }}
+					/>
 				</Grid>
-			</Paper>
+			</Grid>
+
 			<Typography variant="body1" textAlign={'center'} sx={{ color: 'white' }}>
 				Copyright © 2022 by ISTE-SC MANIT. All rights reserved.
 			</Typography>
