@@ -82,6 +82,6 @@
         left : 2.3%;
         margin-inline: auto;
         top: 13%;
-        height: 80vh;
+        min-height: 80vh;
     }
 }

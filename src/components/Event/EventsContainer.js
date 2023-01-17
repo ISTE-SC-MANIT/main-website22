@@ -92,6 +92,7 @@ const EventsContainer = props => {
     const [modalData, setModalData]=useState();
     
     const knowMoreHandler=(event)=>{
+        console.log(event.target.name);
         setModalVisible(true);
         setModalData(data[+event.target.name]);
     }
@@ -111,7 +112,7 @@ const EventsContainer = props => {
                         event.name==="div"?(
                             <div></div>
                         ):(
-                            <Event name={event.id} onClick={knowMoreHandler} handler={knowMoreHandler} imageSrc={require(`../../assets/EventImages/${event.name}.jpg`)} />
+                            <Event name={event.id} onClick={knowMoreHandler} imageSrc={require(`../../assets/EventImages/${event.name}.jpg`)} />
                         )    
                     )
                 }
