@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 import Navbar from './components/UI/Navbar';
 import Sponsors from './components/UI/Sponsors';
+import About from './components/About/About';
 import style from './App.module.css';
 import EventsContainer from './components/Event/EventsContainer';
 import Header from './components/Header';
@@ -14,6 +15,7 @@ function App() {
 		<>
 			<Navbar />
 			<Header></Header>
+			<About></About>
 			<EventsContainer />
 			<BreakLine />
 			<Sponsors></Sponsors>
