@@ -16,7 +16,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/Twitter';
-import logoIste from '../../assets/Istelogo.png';
+import logoIste from '../../assets/ISTElogo.png';
 import { Tooltip } from '@mui/material';
 
 const Footer = () => {
