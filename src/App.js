@@ -18,9 +18,9 @@ function App() {
 			{/* <Slide triggerOnce direction="right"> */}
 			<About></About>
 			{/* </Slide> */}
-			<Slide triggerOnce direction="up">
-				<EventsContainer />
-			</Slide>
+			{/* <Slide triggerOnce direction="up"> */}
+			<EventsContainer />
+			{/* </Slide> */}
 
 			<BreakLine />
 			<Slide triggerOnce>
