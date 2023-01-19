@@ -1,11 +1,18 @@
 .headDiv {
 	width: 100%;
 	height: 100vh;
-	color: rgb(255, 255, 255);
+	color: rgb(59, 37, 37);
 	background-color: rgb(41, 41, 54);
 
 	display: flex;
 	flex-direction: column;
+
+	background: url('../assets/Backgrounds/bg3.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	backdrop-filter: blur(4px);
 
 	text-align: center;
 
@@ -17,7 +24,7 @@
 	animation: appearHead 1s;
 }
 
-@keyframes appearHead {
+@keyframes appearHead{
 	from {
 		opacity: 0;
 	}

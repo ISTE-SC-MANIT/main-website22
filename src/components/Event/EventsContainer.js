@@ -98,7 +98,7 @@ const data = [
 const EventsContainer = (props) => {
 	const [modalVisible, setModalVisible] = useState(false);
 	const [modalData, setModalData] = useState();
-	const [loading, setLoading] = useState(false);
+
 	const knowMoreHandler = (event) => {
 		console.log(event.target.name);
 		setModalVisible(true);
