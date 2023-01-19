@@ -5,9 +5,13 @@
     width: 100vw;
     height: 100vh;
 
-    z-index: 5;
+    z-index: 30;
 
-    background-color: rgba(0, 0, 0, 0.85);
+    background: url('../../assets/Backgrounds/bg2.jpg');
+        background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+    /* background-color: rgba(0, 0, 0, 0.85); */
     animation: appear 1s;
     animation-direction: alternate;
 }
@@ -18,8 +22,9 @@
     left:25%;
     width: 50vw;
     min-height: 60vh;
-    z-index: 10;
-    background-color: rgb(232, 232, 232);
+    z-index: 40;
+    /* background-color: rgb(232, 232, 232); */
+    color:white;
 
     display: flex;
     flex-direction: column;
@@ -40,7 +45,7 @@
     border-radius: 3px;
     text-decoration: none;
     color:white;
-    background-color: #007413;
+    background-color: #e8be01;
 }
 
 .website:hover{

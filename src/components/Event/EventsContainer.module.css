@@ -12,6 +12,16 @@
     /* border: 1px solid rgb(17, 31, 85); */
 }
 
+.eventBG{
+    padding-block: 0.5rem;
+    width:100%;
+    margin-inline:auto;
+    background: url('../../assets/Backgrounds/bg4.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .heading{
     text-align: center;
     margin-top: 2em;
@@ -25,5 +35,10 @@
         align-items: center;
         padding:25px;
         width: 88%;
+    }
+
+    .eventBG{
+        padding: 0;
+
     }
 }

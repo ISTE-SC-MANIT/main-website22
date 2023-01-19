@@ -92,7 +92,6 @@ const EventsContainer = props => {
     const [modalData, setModalData]=useState();
     
     const knowMoreHandler=(event)=>{
-        console.log(event.target.name);
         setModalVisible(true);
         setModalData(data[+event.target.name]);
     }
@@ -103,7 +102,7 @@ const EventsContainer = props => {
     }
 
     return (
-        <>
+        <div className={style.eventBG}>
             <h1 className={style.heading}>Our Events</h1>
             <div className={style.eventContainer}>
 
@@ -118,7 +117,7 @@ const EventsContainer = props => {
                 }
             {modalVisible && <EventModal onCloseModal={closeModal}  eventData={modalData}/>}
             </div>
-        </>
+        </div>
     );
 }
 
