@@ -6,26 +6,15 @@ import { Fade, Slide } from 'react-awesome-reveal';
 const EventImage = (props) => {
 	const [load, setLoad] = useState(false);
 	useEffect(() => {
-		if (window.scrollY >= 800) {
+		if (window.scrollY >= 200) {
 			setTimeout(() => {
 				setLoad(true);
 			}, 3000);
 		}
-	});
+	}, [window.scrollY]);
 	return (
 		<div name={props.name} className={style.eventImage} onClick={props.onClick}>
-			{load ? (
-				<Fade triggerOnce direction="down">
-					<img src={props.src} name={props.name} />
-				</Fade>
-			) : (
-				<Skeleton
-					variant="rectangular"
-					width={'100%'}
-					height={'250px'}
-					animation="wave"
-				></Skeleton>
-			)}
+			<img src={props.src} name={props.name} />
 		</div>
 	);
 };
