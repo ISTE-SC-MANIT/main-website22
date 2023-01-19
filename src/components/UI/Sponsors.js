@@ -177,7 +177,7 @@ const Sponsors = () => {
 	const [loading, setLoading] = useState(false);
 
 	useEffect(() => {
-		if (window.scrollY >= 2000)
+		if (window.scrollY >= 2100)
 			setTimeout(() => {
 				setLoading(true);
 			}, 5000);
