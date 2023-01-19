@@ -208,8 +208,7 @@ const Footer = () => {
 					}}
 				>
 					<img
-						src={`	${logoIste}
-`}
+						src={`	${logoIste}`}
 						alt=""
 						style={{ width: '100%' }}
 					/>
