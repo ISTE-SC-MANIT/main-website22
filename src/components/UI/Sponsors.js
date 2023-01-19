@@ -8,7 +8,12 @@ import { Paper } from '@mui/material';
 import { TextField } from '@mui/material';
 import ImgPath from '../../assets/sponsors/conding-ninja-white.png';
 import { hover } from '@testing-library/user-event/dist/hover';
-
+import { Skeleton } from '@mui/material';
+import { Fade, Slide } from 'react-awesome-reveal';
+import { Grow } from '@mui/material';
+// import Fade from 'react-reveal';
+// import Reveal from 'react-reveal/Reveal';
+// import {View}
 // import sponsors from '../../assets/sponsors';
 
 const data = [
@@ -169,6 +174,14 @@ const data = [
 	},
 ];
 const Sponsors = () => {
+	const [loading, setLoading] = useState(false);
+
+	useEffect(() => {
+		if (window.scrollY >= 2000)
+			setTimeout(() => {
+				setLoading(true);
+			}, 5000);
+	});
 	return (
 		<Paper sx={{ marginTop: '2rem', marginBottom: '5rem' }}>
 			<Typography
@@ -176,7 +189,9 @@ const Sponsors = () => {
 				size="small"
 				sx={{ textAlign: 'center', color: 'black', padding: '2rem' }}
 			>
-				Our Sponsors
+				<Slide direction="down" triggerOnce>
+					Our Sponsors
+				</Slide>
 			</Typography>
 
 			<Grid
@@ -188,37 +203,60 @@ const Sponsors = () => {
 				}}
 			>
 				{data.map((spo, index) => (
-					<a href={spo.path} target={'__blank'} style={{}}>
-						<Grid
-							item
-							spacing={1}
-							key={spo.id}
-							sx={{
-								backgroundColor: '#ECECED',
-								padding: '0',
-								borderRadius: '10px',
-								margin: '0.6rem',
-							}}
-						>
-							<div
-								style={{
+					<Slide
+						cascade
+						damping={0.8}
+						direction={index % 3 === 0 ? 'left' : 'right'}
+					>
+						<a href={spo.path} target={'__blank'} style={{}}>
+							<Grid
+								item
+								spacing={1}
+								key={spo.id}
+								sx={{
+									backgroundColor: '#ECECED',
+									padding: '0',
 									borderRadius: '10px',
-									height: '200px',
-									width: '200px',
-									display: 'flex',
-									justifyContent: 'center',
-									alignItems: 'center',
+									margin: '0.6rem',
 								}}
 							>
-								<img
-									src={spo.image}
-									alt=""
-									style={{ height: 'auto', width: '95%', borderRadius: '10px' }}
-									loading="lazy"
-								/>
-							</div>
-						</Grid>
-					</a>
+								<div
+									style={{
+										borderRadius: '10px',
+										height: '200px',
+										width: '200px',
+										display: 'flex',
+										justifyContent: 'center',
+										alignItems: 'center',
+									}}
+								>
+									{loading ? (
+										// <Fade in={true}>
+
+										<img
+											src={spo.image}
+											alt=""
+											style={{
+												height: 'auto',
+												width: '95%',
+												borderRadius: '10px',
+												// zIndex: '-100',
+											}}
+											loading="lazy"
+										/>
+									) : (
+										<Skeleton
+											variant="rectangular"
+											width={'100%'}
+											height={'100%'}
+											animation="wave"
+										></Skeleton>
+									)}
+								</div>
+							</Grid>
+							{/* )} */}
+						</a>
+					</Slide>
 				))}
 			</Grid>
 		</Paper>

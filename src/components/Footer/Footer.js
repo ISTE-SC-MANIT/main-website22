@@ -151,14 +151,7 @@ const Footer = () => {
 						>
 							<Typography>istescmanit@gmail.com</Typography>
 						</a>
-						<Paper
-							sx={{
-								backgroundColor: '#2d3843',
-								width: '150%',
-								// padding: '1rem',
-								//
-							}}
-						>
+						<div style={{ width: '150%' }}>
 							<Grid>
 								<Typography sx={{ textAlign: 'center' }}>
 									<Button sx={{ color: 'white', outline: 'white' }}>
@@ -192,7 +185,7 @@ const Footer = () => {
 									</div>
 								</Typography>
 							</Grid>
-						</Paper>
+						</div>
 					</div>
 				</Grid>
 			</Grid>

@@ -9,17 +9,23 @@ import Header from './components/Header';
 import BreakLine from './components/UI/BreakLine';
 import Footer from './components/Footer/Footer';
 import { Stack, Box } from '@mui/material';
-
+import { Fade, Slide } from 'react-awesome-reveal';
 function App() {
 	return (
 		<>
 			<Navbar />
 			<Header></Header>
+			{/* <Slide triggerOnce direction="right"> */}
 			<About></About>
+			{/* </Slide> */}
 			<EventsContainer />
 			<BreakLine />
-			<Sponsors></Sponsors>
-			<Footer></Footer>
+			<Slide triggerOnce>
+				<Sponsors>{/* */}</Sponsors>
+			</Slide>
+			<Slide triggerOnce direction="left">
+				<Footer></Footer>
+			</Slide>
 		</>
 	);
 }

@@ -8,7 +8,15 @@ import { Paper } from '@mui/material';
 import { TextField } from '@mui/material';
 import AboutImgPath from '../../assets/ab.png';
 import { useMediaQuery } from '@mui/material';
+import { Fade, Slide } from 'react-awesome-reveal';
+import { Skeleton } from '@mui/material';
 const About = () => {
+	const [loading, setLoading] = useState(false);
+	// useEffect(() => {
+	// 	setTimeout(() => {
+	// 		setLoading(true);
+	// 	}, 3000);
+	// });
 	return (
 		<Paper
 			sx={{
@@ -23,7 +31,9 @@ const About = () => {
 			}}
 		>
 			<Typography variant="h3" sx={{ textAlign: 'center' }}>
-				About Us
+				<Slide triggerOnce direction="down">
+					About Us
+				</Slide>
 			</Typography>
 			<Grid
 				container
@@ -50,19 +60,22 @@ const About = () => {
 					}}
 				>
 					<Card>
-						<CardMedia
-							sx={{
-								display: 'flex',
-								justifyContent: 'center',
-								alignItems: 'center',
-							}}
-						>
-							<img
-								src={`${AboutImgPath}`}
-								style={{ width: '70%', height: '70%' }}
-								alt=""
-							/>
-						</CardMedia>
+						<Slide direction="left" triggerOnce>
+							{' '}
+							<CardMedia
+								sx={{
+									display: 'flex',
+									justifyContent: 'center',
+									alignItems: 'center',
+								}}
+							>
+								<img
+									src={`${AboutImgPath}`}
+									style={{ width: '70%', height: '70%' }}
+									alt=""
+								/>
+							</CardMedia>
+						</Slide>
 					</Card>
 				</Grid>
 				<Grid
@@ -78,25 +91,28 @@ const About = () => {
 						},
 					}}
 				>
-					<Typography
-						sx={{ textAlign: 'justify', opacity: 0.7 }}
-						variant="body1"
-					>
-						Indian Society for Technical Education (ISTE) is a National level
-						non-profit Society for the Technical Education System in our
-						country. ISTE assists and contributes to the production and
-						development of top quality professional technocrats. It has over
-						1505 Student Chapters at the institutional level, one such chapter
-						is ISTE SC MANIT. ISTE SC MANIT is one of the oldest student
-						organizations in MANIT. Started in 2003, it has been actively
-						contributing towards the professional and technical education of the
-						students at MANIT and beyond. It has been conducting national level
-						events like ChimeraX - The Multi-city Quizzing Competition, CODATHON
-						- The Inter NIT Coding Contest, Anubhuti - The Talkshow, Megatreopuz
-						- The Online Cryptic Hunt, Version β - The National level Hackathon.
-						Events like these have gifted ISTE SC MANIT the Best Students'
-						Chapter Award in the MP & Chhattisgarh region, not once but thrice.
-					</Typography>
+					<Slide direction="right" triggerOnce>
+						<Typography
+							sx={{ textAlign: 'justify', opacity: 0.7 }}
+							variant="body1"
+						>
+							Indian Society for Technical Education (ISTE) is a National level
+							non-profit Society for the Technical Education System in our
+							country. ISTE assists and contributes to the production and
+							development of top quality professional technocrats. It has over
+							1505 Student Chapters at the institutional level, one such chapter
+							is ISTE SC MANIT. ISTE SC MANIT is one of the oldest student
+							organizations in MANIT. Started in 2003, it has been actively
+							contributing towards the professional and technical education of
+							the students at MANIT and beyond. It has been conducting national
+							level events like ChimeraX - The Multi-city Quizzing Competition,
+							CODATHON - The Inter NIT Coding Contest, Anubhuti - The Talkshow,
+							Megatreopuz - The Online Cryptic Hunt, Version β - The National
+							level Hackathon. Events like these have gifted ISTE SC MANIT the
+							Best Students' Chapter Award in the MP & Chhattisgarh region, not
+							once but thrice.
+						</Typography>
+					</Slide>
 				</Grid>
 			</Grid>
 		</Paper>
