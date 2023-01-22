@@ -26,7 +26,7 @@ function App() {
 			{/* </Slide> */}
 
 			<BreakLine />
-			<Team/>
+			{/* <Team/> */}
 			<Slide triggerOnce>
 				<Sponsors>{/* */}</Sponsors>
 			
