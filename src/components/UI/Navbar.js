@@ -28,7 +28,7 @@ const Navbar = (props) => {
 				<Navlink href="#">About us</Navlink>
 				<Navlink href="#">Events</Navlink>
 				<Navlink href="#">Sponsors</Navlink>
-				<Navlink href="#">Our Team</Navlink>
+				<Navlink href="/team">Our Team</Navlink>
 				<Navlink href="#">Contact Us</Navlink>
 			</div>
 
@@ -47,7 +47,7 @@ const Navbar = (props) => {
 				<Navlink href="#">About us</Navlink>
 				<Navlink href="#">Events</Navlink>
 				<Navlink href="#">Sponsors</Navlink>
-				<Navlink href="#">Our Team</Navlink>
+				<Navlink href="/team">Our Team</Navlink>
 				<Navlink href="#">Contact Us</Navlink>
 			</ul>
 			<div
