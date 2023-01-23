@@ -112,7 +112,7 @@ const EventsContainer = (props) => {
 
 	return (
 		<>
-			<h1 className={style.heading}>Our Events</h1>
+			<h1 className={style.heading} id="events">Our Events</h1>
 			<div className={style.eventContainer}>
 				{data.map((event) =>
 					event.name === 'div' ? (

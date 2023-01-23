@@ -1,8 +1,10 @@
 import React from "react";
 
+import Navbar from '../components/UI/Navbar';
+
 const TeamPage=props=>{
     return(
-        <h1>Team Page</h1>
+        <Navbar/>
     );
 }
 

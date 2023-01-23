@@ -183,83 +183,86 @@ const Sponsors = () => {
 			}, 5000);
 	});
 	return (
-		<Paper sx={{ marginTop: '2rem', marginBottom: '5rem' }}>
-			<Typography
-				variant="h3"
-				size="small"
-				sx={{ textAlign: 'center', color: 'black', padding: '2rem' }}
-			>
-				<Slide direction="down" triggerOnce>
-					Our Sponsors
-				</Slide>
-			</Typography>
+		<div id="sponsors">
 
-			<Grid
-				container
-				sx={{
-					alignItems: 'center',
-					justifyContent: 'center',
-					paddingBottom: '2rem',
-				}}
-			>
-				{data.map((spo, index) => (
-					<Slide
-						cascade
-						damping={0.8}
-						direction={index % 3 === 0 ? 'left' : 'right'}
-					>
-						<a href={spo.path} target={'__blank'} style={{}}>
-							<Grid
-								item
-								spacing={1}
-								key={spo.id}
-								sx={{
-									backgroundColor: '#ECECED',
-									padding: '0',
-									borderRadius: '10px',
-									margin: '0.6rem',
-								}}
-							>
-								<div
-									style={{
+			<Paper sx={{ marginTop: '2rem', marginBottom: '5rem' }}>
+				<Typography
+					variant="h3"
+					size="small"
+					sx={{ textAlign: 'center', color: 'black', padding: '2rem' }}
+				>
+					<Slide direction="down" triggerOnce>
+						Our Sponsors
+					</Slide>
+				</Typography>
+
+				<Grid
+					container
+					sx={{
+						alignItems: 'center',
+						justifyContent: 'center',
+						paddingBottom: '2rem',
+					}}
+				>
+					{data.map((spo, index) => (
+						<Slide
+							cascade
+							damping={0.8}
+							direction={index % 3 === 0 ? 'left' : 'right'}
+						>
+							<a href={spo.path} target={'__blank'} style={{}}>
+								<Grid
+									item
+									spacing={1}
+									key={spo.id}
+									sx={{
+										backgroundColor: '#ECECED',
+										padding: '0',
 										borderRadius: '10px',
-										height: '200px',
-										width: '200px',
-										display: 'flex',
-										justifyContent: 'center',
-										alignItems: 'center',
+										margin: '0.6rem',
 									}}
 								>
-									{loading ? (
-										// <Fade in={true}>
+									<div
+										style={{
+											borderRadius: '10px',
+											height: '200px',
+											width: '200px',
+											display: 'flex',
+											justifyContent: 'center',
+											alignItems: 'center',
+										}}
+									>
+										{loading ? (
+											// <Fade in={true}>
 
-										<img
-											src={spo.image}
-											alt=""
-											style={{
-												height: 'auto',
-												width: '95%',
-												borderRadius: '10px',
-												// zIndex: '-100',
-											}}
-											loading="lazy"
-										/>
-									) : (
-										<Skeleton
-											variant="rectangular"
-											width={'100%'}
-											height={'100%'}
-											animation="wave"
-										></Skeleton>
-									)}
-								</div>
-							</Grid>
-							{/* )} */}
-						</a>
-					</Slide>
-				))}
-			</Grid>
-		</Paper>
+											<img
+												src={spo.image}
+												alt=""
+												style={{
+													height: 'auto',
+													width: '95%',
+													borderRadius: '10px',
+													// zIndex: '-100',
+												}}
+												loading="lazy"
+											/>
+										) : (
+											<Skeleton
+												variant="rectangular"
+												width={'100%'}
+												height={'100%'}
+												animation="wave"
+											></Skeleton>
+										)}
+									</div>
+								</Grid>
+								{/* )} */}
+							</a>
+						</Slide>
+					))}
+				</Grid>
+			</Paper>
+		</div>
 	);
 };
 

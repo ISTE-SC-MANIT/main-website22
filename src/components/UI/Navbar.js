@@ -24,12 +24,12 @@ const Navbar = (props) => {
 				<img src={ISTElogo} />
 			</div>
 			<div className={style['navlinks-container']}>
-				<Navlink href="#">Home</Navlink>
+				<Navlink href="/">Home</Navlink>
 				<Navlink href="#">About us</Navlink>
-				<Navlink href="#">Events</Navlink>
-				<Navlink href="#">Sponsors</Navlink>
+				<Navlink href="#events">Events</Navlink>
+				<Navlink href="#sponsors">Sponsors</Navlink>
 				<Navlink href="/team">Our Team</Navlink>
-				<Navlink href="#">Contact Us</Navlink>
+				<Navlink href="#footer">Contact Us</Navlink>
 			</div>
 
 			<ul
@@ -43,12 +43,12 @@ const Navbar = (props) => {
 				>
 					<h1>X</h1>
 				</div>
-				<Navlink href="#">Home</Navlink>
+				<Navlink href="/">Home</Navlink>
 				<Navlink href="#">About us</Navlink>
-				<Navlink href="#">Events</Navlink>
-				<Navlink href="#">Sponsors</Navlink>
+				<Navlink href="#events">Events</Navlink>
+				<Navlink href="#sponsors">Sponsors</Navlink>
 				<Navlink href="/team">Our Team</Navlink>
-				<Navlink href="#">Contact Us</Navlink>
+				<Navlink href="#footer">Contact Us</Navlink>
 			</ul>
 			<div
 				className={`${mobNav ? style.hide : ''} ${style.ham}`}
