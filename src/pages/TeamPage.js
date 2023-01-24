@@ -1,10 +1,12 @@
 import React from 'react';
 
 import Navbar from '../components/UI/Navbar';
-import Container from '../components/TeamComponents/Container';
-
+import Container4 from '../components/TeamComponents/Container4';
+import Container2 from '../components/TeamComponents/Container2';
+import Container3 from '../components/TeamComponents/Container3';
+import { Paper, Typography } from '@mui/material';
 import data from '../assets/TeamData';
-
+import Footer from '../components/Footer/Footer';
 function parseImage(text) {
 	let i = text.indexOf('id');
 	let id = '';
@@ -111,9 +113,21 @@ const TeamPage = (props) => {
 	return (
 		<>
 			<Navbar />
-			<Container year="4th" data={data4} />
-			<Container year="3rd" data={data3} />
-			<Container year="2nd" data={data2} />
+			<Paper sx={{ marginTop: '8rem' }}>
+				<Typography variant="h4" sx={{ textAlign: 'center' }}>
+					4th Year
+				</Typography>
+				<Container4 year="4th" data={data4} />
+				<Typography variant="h4" sx={{ textAlign: 'center' }}>
+					3rd Year
+				</Typography>
+				<Container3 year="3rd" data={data3} />
+				<Typography variant="h4" sx={{ textAlign: 'center' }}>
+					2nd Year
+				</Typography>
+				<Container2 year="2nd" data={data2} />
+			</Paper>
+			<Footer></Footer>
 		</>
 	);
 };

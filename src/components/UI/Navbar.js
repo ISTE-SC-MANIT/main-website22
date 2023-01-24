@@ -25,11 +25,22 @@ const Navbar = (props) => {
 				<img src={ISTElogo} />
 			</div>
 			<div className={style['navlinks-container']}>
-				<Link to="/main-website22/">Home</Link>
+				<Navlink>
+					<Link
+						to="/main-website22/"
+						style={{ color: 'white', textDecoration: 'none' }}
+					>
+						Home
+					</Link>
+				</Navlink>
 				<Navlink href="#">About us</Navlink>
 				<Navlink href="#events">Events</Navlink>
 				<Navlink href="#sponsors">Sponsors</Navlink>
-				<Link to="/team">Our Team</Link>
+				<Navlink>
+					<Link to="/team" style={{ color: 'white', textDecoration: 'none' }}>
+						Our Team
+					</Link>
+				</Navlink>
 				<Navlink href="#footer">Contact Us</Navlink>
 			</div>
 
