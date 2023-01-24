@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/main-website22/static/css/main.f0e57b90.css",
-    "main.js": "/main-website22/static/js/main.a6ced96b.js",
+    "main.css": "/main-website22/static/css/main.31dbb272.css",
+    "main.js": "/main-website22/static/js/main.c40152d5.js",
     "static/js/787.0c4dd52e.chunk.js": "/main-website22/static/js/787.0c4dd52e.chunk.js",
     "static/media/Mentor.x.png": "/main-website22/static/media/Mentor.x.720a8da50a99bfed5bd9.png",
     "static/media/ab.png": "/main-website22/static/media/ab.175cbd60c97790064359.png",
@@ -38,12 +38,12 @@
     "static/media/Foxmula-logo-black-365x365.png": "/main-website22/static/media/Foxmula-logo-black-365x365.2cdc8ce85db6e66f6104.png",
     "static/media/GitHub_Logo.png": "/main-website22/static/media/GitHub_Logo.746ec8f0bc97208f903e.png",
     "index.html": "/main-website22/index.html",
-    "main.f0e57b90.css.map": "/main-website22/static/css/main.f0e57b90.css.map",
-    "main.a6ced96b.js.map": "/main-website22/static/js/main.a6ced96b.js.map",
+    "main.31dbb272.css.map": "/main-website22/static/css/main.31dbb272.css.map",
+    "main.c40152d5.js.map": "/main-website22/static/js/main.c40152d5.js.map",
     "787.0c4dd52e.chunk.js.map": "/main-website22/static/js/787.0c4dd52e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f0e57b90.css",
-    "static/js/main.a6ced96b.js"
+    "static/css/main.31dbb272.css",
+    "static/js/main.c40152d5.js"
   ]
 }
