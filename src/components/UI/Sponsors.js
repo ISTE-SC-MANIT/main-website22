@@ -184,7 +184,6 @@ const Sponsors = () => {
 	});
 	return (
 		<div id="sponsors">
-
 			<Paper sx={{ marginTop: '2rem', marginBottom: '5rem' }}>
 				<Typography
 					variant="h3"
@@ -202,6 +201,7 @@ const Sponsors = () => {
 						alignItems: 'center',
 						justifyContent: 'center',
 						paddingBottom: '2rem',
+						padding: '3rem',
 					}}
 				>
 					{data.map((spo, index) => (
@@ -209,6 +209,7 @@ const Sponsors = () => {
 							cascade
 							damping={0.8}
 							direction={index % 3 === 0 ? 'left' : 'right'}
+							triggerOnce
 						>
 							<a href={spo.path} target={'__blank'} style={{}}>
 								<Grid

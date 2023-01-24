@@ -1,23 +1,21 @@
 import TeamPage from './pages/TeamPage';
 import HomePage from './pages/HomePage';
 
-import {createBrowserRouter, RouterProvider} from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
-
-const router=createBrowserRouter([
-	
+const router = createBrowserRouter([
 	{
-		path:'/',
-		element:<HomePage/>
+		path: '/main-website22/',
+		element: <HomePage />,
 	},
 	{
-		path:'/team',
-		element: <TeamPage/>
-	}
+		path: '/team',
+		element: <TeamPage />,
+	},
 ]);
 
 function App() {
-	return <RouterProvider router={router}/>
+	return <RouterProvider router={router} />;
 }
 
 export default App;

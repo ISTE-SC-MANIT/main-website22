@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import Navlink from './Navlink';
+import { Link } from 'react-router-dom';
 
 import ISTElogo from '../../assets/ISTElogo.svg';
 import ham from '../../assets/ham.png';
@@ -24,11 +25,11 @@ const Navbar = (props) => {
 				<img src={ISTElogo} />
 			</div>
 			<div className={style['navlinks-container']}>
-				<Navlink href="/">Home</Navlink>
+				<Link to="/main-website22/">Home</Link>
 				<Navlink href="#">About us</Navlink>
 				<Navlink href="#events">Events</Navlink>
 				<Navlink href="#sponsors">Sponsors</Navlink>
-				<Navlink href="/team">Our Team</Navlink>
+				<Link to="/team">Our Team</Link>
 				<Navlink href="#footer">Contact Us</Navlink>
 			</div>
 
