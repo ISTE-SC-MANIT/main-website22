@@ -24,7 +24,7 @@ const Navbar = (props) => {
 				<img src={ISTElogo} />
 			</div>
 			<div className={style['navlinks-container']}>
-				<Navlink href="/">Home</Navlink>
+				<Navlink href="/main-website22">Home</Navlink>
 				<Navlink href="#">About us</Navlink>
 				<Navlink href="#events">Events</Navlink>
 				<Navlink href="#sponsors">Sponsors</Navlink>
@@ -43,7 +43,7 @@ const Navbar = (props) => {
 				>
 					<h1>X</h1>
 				</div>
-				<Navlink href="/">Home</Navlink>
+				<Navlink href="/main-website22">Home</Navlink>
 				<Navlink href="#">About us</Navlink>
 				<Navlink href="#events">Events</Navlink>
 				<Navlink href="#sponsors">Sponsors</Navlink>
