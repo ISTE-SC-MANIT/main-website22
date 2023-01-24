@@ -1,13 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { Box, display, height } from '@mui/system';
 import { Typography } from '@mui/material';
-import { Stack } from '@mui/material';
 import Grid from '@mui/material/Grid';
 import { Button, Card, CardMedia } from '@mui/material';
 import { Paper } from '@mui/material';
-import { TextField } from '@mui/material';
-import ImgPath from '../../assets/sponsors/conding-ninja-white.png';
-import { hover } from '@testing-library/user-event/dist/hover';
+
 import HomeIcon from '@mui/icons-material/Home';
 import ContactsIcon from '@mui/icons-material/Contacts';
 import EmailIcon from '@mui/icons-material/Email';
@@ -22,7 +18,6 @@ import { Tooltip } from '@mui/material';
 const Footer = () => {
 	return (
 		<div id="footer">
-
 			<Paper sx={{ backgroundColor: '#2d3843' }}>
 				<Typography variant="h5" sx={{ textAlign: 'center' }}></Typography>
 				<Grid
@@ -35,8 +30,8 @@ const Footer = () => {
 						width: '100%',
 					}}
 					columnGap={20}
-				// fullWidth
-				// spacing={18}
+					// fullWidth
+					// spacing={18}
 				>
 					<Grid
 						item
@@ -157,7 +152,8 @@ const Footer = () => {
 								<Grid>
 									<Typography sx={{ textAlign: 'center' }}>
 										<Button sx={{ color: 'white', outline: 'white' }}>
-											<LinkIcon></LinkIcon> <Typography>Social Links</Typography>
+											<LinkIcon></LinkIcon>{' '}
+											<Typography>Social Links</Typography>
 										</Button>
 										<div>
 											<Tooltip title="Linkedin" arrow>
@@ -202,15 +198,15 @@ const Footer = () => {
 							alignItems: 'center',
 						}}
 					>
-						<img
-							src={`	${logoIste}`}
-							alt=""
-							style={{ width: '100%' }}
-						/>
+						<img src={`	${logoIste}`} alt="" style={{ width: '100%' }} />
 					</Grid>
 				</Grid>
 
-				<Typography variant="body1" textAlign={'center'} sx={{ color: 'white' }}>
+				<Typography
+					variant="body1"
+					textAlign={'center'}
+					sx={{ color: 'white' }}
+				>
 					Copyright © 2022 by ISTE-SC MANIT. All rights reserved.
 				</Typography>
 			</Paper>

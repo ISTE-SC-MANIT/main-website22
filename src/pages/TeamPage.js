@@ -7,6 +7,8 @@ import Container3 from '../components/TeamComponents/Container3';
 import { Paper, Typography } from '@mui/material';
 import data from '../assets/TeamData';
 import Footer from '../components/Footer/Footer';
+import { Fade, Slide } from 'react-awesome-reveal';
+import BreakLine from '../components/UI/BreakLine';
 function parseImage(text) {
 	let i = text.indexOf('id');
 	let id = '';
@@ -113,20 +115,25 @@ const TeamPage = (props) => {
 	return (
 		<>
 			<Navbar />
+
 			<Paper sx={{ marginTop: '8rem' }}>
 				<Typography variant="h4" sx={{ textAlign: 'center' }}>
 					4th Year
 				</Typography>
 				<Container4 year="4th" data={data4} />
+
 				<Typography variant="h4" sx={{ textAlign: 'center' }}>
 					3rd Year
 				</Typography>
+
 				<Container3 year="3rd" data={data3} />
+
 				<Typography variant="h4" sx={{ textAlign: 'center' }}>
 					2nd Year
 				</Typography>
 				<Container2 year="2nd" data={data2} />
 			</Paper>
+
 			<Footer></Footer>
 		</>
 	);
