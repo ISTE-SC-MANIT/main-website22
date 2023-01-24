@@ -94,14 +94,14 @@ const Container4 = (props) => {
 								<div>
 									<Tooltip title="Linkedin" arrow>
 										<Button>
-											<a href="">
+											<a target={'__blank'} href={person.linkedinProfile}>
 												<LinkedInIcon></LinkedInIcon>
 											</a>
 										</Button>
 									</Tooltip>
 									<Tooltip title="Instagram" arrow>
 										<Button>
-											<a href="">
+											<a target={'__blank'} href={person.instagramProfile}>
 												<InstagramIcon
 													sx={{
 														color: '#E1306C',
@@ -112,7 +112,7 @@ const Container4 = (props) => {
 									</Tooltip>
 									<Tooltip title="FaceBook" arrow>
 										<Button>
-											<a href="">
+											<a target={'__blank'} href={person.facebookProfile}>
 												<FacebookIcon></FacebookIcon>
 											</a>
 										</Button>
