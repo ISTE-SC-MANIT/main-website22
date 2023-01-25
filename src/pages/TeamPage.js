@@ -1,14 +1,11 @@
 import React from 'react';
 
 import Navbar from '../components/UI/Navbar';
-import Container4 from '../components/TeamComponents/Container4';
-import Container2 from '../components/TeamComponents/Container2';
-import Container3 from '../components/TeamComponents/Container3';
-import { Paper, Typography } from '@mui/material';
+import MainContainer from '../../src/components/TeamComponents/MainContainer';
+import { Paper } from '@mui/material';
 import data from '../assets/TeamData';
 import Footer from '../components/Footer/Footer';
-import { Fade, Slide } from 'react-awesome-reveal';
-import BreakLine from '../components/UI/BreakLine';
+
 function parseImage(text) {
 	let i = text.indexOf('id');
 	let id = '';
@@ -110,28 +107,23 @@ data.forEach((entry) => {
 	if (entry.year == '3rd' || entry.year == '3') data3.push(entry);
 	if (entry.year == '2nd' || entry.year == '2') data2.push(entry);
 });
-
+const year = [
+	{ year: 'Final', data: data4 },
+	{ year: 'Third', data: data3 },
+	{
+		year: 'Second',
+		data: data2,
+	},
+];
 const TeamPage = (props) => {
 	return (
 		<>
 			<Navbar />
 
 			<Paper sx={{ marginTop: '8rem' }}>
-				<Typography variant="h4" sx={{ textAlign: 'center' }}>
-					4th Year
-				</Typography>
-				<Container4 year="4th" data={data4} />
-
-				<Typography variant="h4" sx={{ textAlign: 'center' }}>
-					3rd Year
-				</Typography>
-
-				<Container3 year="3rd" data={data3} />
-
-				<Typography variant="h4" sx={{ textAlign: 'center' }}>
-					2nd Year
-				</Typography>
-				<Container2 year="2nd" data={data2} />
+				{year.map((year, index) => (
+					<MainContainer year={year.year} data={year.data} />
+				))}
 			</Paper>
 
 			<Footer></Footer>
