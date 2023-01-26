@@ -4,7 +4,8 @@ import Navbar from '../components/UI/Navbar';
 import MainContainer from '../../src/components/TeamComponents/MainContainer';
 import { Paper } from '@mui/material';
 import data from '../assets/TeamData';
-import Footer from '../components/Footer/Footer';
+
+import Footer from '../components/UI/Footer';
 
 function parseImage(text) {
 	let i = text.indexOf('id');
