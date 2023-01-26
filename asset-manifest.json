@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/main-website22/static/css/main.db627f34.css",
-    "main.js": "/main-website22/static/js/main.444173ec.js",
+    "main.css": "/main-website22/static/css/main.cbfe5c79.css",
+    "main.js": "/main-website22/static/js/main.66d86503.js",
     "static/js/787.0c4dd52e.chunk.js": "/main-website22/static/js/787.0c4dd52e.chunk.js",
     "static/media/Team.JPG": "/main-website22/static/media/Team.16f202e5b1622ab77a65.JPG",
     "static/media/Mentor.x.png": "/main-website22/static/media/Mentor.x.720a8da50a99bfed5bd9.png",
@@ -22,7 +22,7 @@
     "static/media/engi-circle.png": "/main-website22/static/media/engi-circle.02264b2c3f23c0daba83.png",
     "static/media/stand-out-stickers-logo.png": "/main-website22/static/media/stand-out-stickers-logo.2709ec07c7852ec14a2f.png",
     "static/media/GDG Chapter lockup - GDG Bhopal.png": "/main-website22/static/media/GDG Chapter lockup - GDG Bhopal.26888c48914860662597.png",
-    "static/media/ISTElogo.svg": "/main-website22/static/media/ISTElogo.a74f1bcec9b36f8b044934b3c92f6b69.svg",
+    "static/media/ISTElogo.svg": "/main-website22/static/media/ISTElogo.77cdce8ad0fdc0ae9997beba797d9de5.svg",
     "static/media/IMG_7748.PNG": "/main-website22/static/media/IMG_7748.af1d7781c1e2dbad0707.PNG",
     "static/media/GUVI-logo-black-1024x496.png": "/main-website22/static/media/GUVI-logo-black-1024x496.ad4c9fe0b24d80fee811.png",
     "static/media/ELearnmarket Logo.png": "/main-website22/static/media/ELearnmarket Logo.b85ee33dc2fd80ab2868.png",
@@ -36,12 +36,12 @@
     "static/media/Foxmula-logo-black-365x365.png": "/main-website22/static/media/Foxmula-logo-black-365x365.2cdc8ce85db6e66f6104.png",
     "static/media/GitHub_Logo.png": "/main-website22/static/media/GitHub_Logo.746ec8f0bc97208f903e.png",
     "index.html": "/main-website22/index.html",
-    "main.db627f34.css.map": "/main-website22/static/css/main.db627f34.css.map",
-    "main.444173ec.js.map": "/main-website22/static/js/main.444173ec.js.map",
+    "main.cbfe5c79.css.map": "/main-website22/static/css/main.cbfe5c79.css.map",
+    "main.66d86503.js.map": "/main-website22/static/js/main.66d86503.js.map",
     "787.0c4dd52e.chunk.js.map": "/main-website22/static/js/787.0c4dd52e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.db627f34.css",
-    "static/js/main.444173ec.js"
+    "static/css/main.cbfe5c79.css",
+    "static/js/main.66d86503.js"
   ]
 }
