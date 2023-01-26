@@ -27,7 +27,7 @@ const Navbar = (props) => {
 			<div className={style['navlinks-container']}>
 
 				<Navlink href="/main-website22">Home</Navlink>
-				<Navlink href="#">About us</Navlink>
+				<Navlink href="/main-website22#about">About us</Navlink>
 				<Navlink href="/main-website22#events">Events</Navlink>
 				<Navlink href="/main-website22#sponsors">Sponsors</Navlink>
 				<Navlink>
@@ -50,7 +50,7 @@ const Navbar = (props) => {
 					<h1>X</h1>
 				</div>
 				<Navlink href="/main-website22">Home</Navlink>
-				<Navlink href="#">About us</Navlink>
+				<Navlink href="/main-website22#about">About us</Navlink>
 				<Navlink href="/main-website22#events">Events</Navlink>
 				<Navlink href="/main-website22#sponsors">Sponsors</Navlink>
 				<Navlink href="/team">Our Team</Navlink>
