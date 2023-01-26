@@ -8,11 +8,13 @@ const Header = (props) => {
 	return (
 		<div className={style.headDiv}>
 			<BreakLine />
-			<h1>ISTE SC MANIT</h1>
-			<h3>
-				Best Students' Chapter in Madhya Pradesh-Chhattisgarh Region from 3
-				consecutive years.
-			</h3>
+			<div>
+				<h1>ISTE SC MANIT</h1>
+				<h3>
+					Best Students' Chapter in Madhya Pradesh-Chhattisgarh Region from 3
+					consecutive years.
+				</h3>
+			</div>
 			<BreakLine />
 		</div>
 	);

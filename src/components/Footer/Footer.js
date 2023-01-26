@@ -18,7 +18,7 @@ import { Tooltip } from '@mui/material';
 const Footer = () => {
 	return (
 		<div id="footer">
-			<Paper sx={{ backgroundColor: '#2d3843' }}>
+			<Paper sx={{ backgroundColor: 'rgba(12, 12, 59, 1);' }}>
 				<Typography variant="h5" sx={{ textAlign: 'center' }}></Typography>
 				<Grid
 					container

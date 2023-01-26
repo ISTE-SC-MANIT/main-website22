@@ -2,19 +2,17 @@
 	width: 100%;
 	height: 100vh;
 	color: rgb(59, 37, 37);
-	color: white;
+	color: rgb(255, 177, 32);
 
-	background-color: rgb(41, 41, 54);
+	background-color: rgb(19, 19, 19);
 
 	display: flex;
 	flex-direction: column;
 
-	background: url('../assets/Backgrounds/bg1.jpg');
+	/* background: url('../assets/Backgrounds/bg7.jpg');  */
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-
-	backdrop-filter: blur(4px);
 
 	text-align: center;
 
