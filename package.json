@@ -6,6 +6,7 @@
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
+    "@material-ui/styles": "^4.11.5",
     "@mui/icons-material": "^5.11.0",
     "@mui/material": "^5.11.4",
     "@mui/styles": "^5.11.2",
@@ -16,6 +17,7 @@
     "react-awesome-reveal": "^4.2.3",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.7.0",
+    "react-script-tag": "^1.1.2",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },

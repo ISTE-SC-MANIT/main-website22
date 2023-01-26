@@ -1,7 +1,7 @@
 .headDiv {
 	width: 100%;
 	height: 100vh;
-	/* color: rgb(59, 37, 37); */
+	color: rgb(59, 37, 37);
 	color: white;
 
 	background-color: rgb(41, 41, 54);
@@ -18,7 +18,6 @@
 
 	text-align: center;
 
-	/* padding: 1em; */
 	margin: auto;
 	justify-content: center;
 	align-items: center;

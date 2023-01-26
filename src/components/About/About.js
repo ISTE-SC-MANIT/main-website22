@@ -6,17 +6,37 @@ import Grid from '@mui/material/Grid';
 import { Button, Card, CardMedia } from '@mui/material';
 import { Paper } from '@mui/material';
 import { TextField } from '@mui/material';
-import AboutImgPath from '../../assets/ab.png';
+import AboutImgPath from '../../assets/Team.JPG';
 import { useMediaQuery } from '@mui/material';
 import { Fade, Slide } from 'react-awesome-reveal';
 import { Skeleton } from '@mui/material';
+import { makeStyles } from '@material-ui/styles';
+
+const useStyles = makeStyles({
+	root: {
+		border: 0,
+		borderRadius: 3,
+		boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
+		color: 'white',
+		height: 48,
+		padding: '0 30px',
+	},
+	pre: {
+		height: '15px',
+		margin: '4px',
+	},
+});
 const About = () => {
+	const classes = useStyles();
+	const [view, setView] = useState(false);
+	useEffect(() => {
+		setTimeout(() => {
+			setLoading(true);
+		}, 6000);
+	});
+
 	const [loading, setLoading] = useState(false);
-	// useEffect(() => {
-	// 	setTimeout(() => {
-	// 		setLoading(true);
-	// 	}, 3000);
-	// });
+
 	return (
 		<Paper
 			sx={{
@@ -37,19 +57,21 @@ const About = () => {
 			</Typography>
 			<Grid
 				container
+				// columnSpacing={3}
 				sx={{
 					alignItems: 'center',
 					justifyContent: 'center',
 					paddingBottom: '0.8rem',
+					marginTop: '2rem',
 					// backgroundColor: 'red',
 					width: '100%',
 				}}
-				columnGap={2}
+				columnGap={7}
 			>
 				<Grid
 					item
 					sx={{
-						width: '40%',
+						width: '38%',
 						margin: '0.7rem',
 						height: '50%',
 						justifyContent: 'center',
@@ -59,22 +81,24 @@ const About = () => {
 						},
 					}}
 				>
-					<Card>
-						<Slide direction="left" triggerOnce>
+					<Card className={classes.card}>
+						<Slide direction="left" triggerOnce setView={true}>
 							{' '}
-							<CardMedia
-								sx={{
-									display: 'flex',
-									justifyContent: 'center',
-									alignItems: 'center',
-								}}
-							>
-								<img
-									src={`${AboutImgPath}`}
-									style={{ width: '70%', height: '70%' }}
-									alt=""
-								/>
-							</CardMedia>
+							<Fade>
+								<CardMedia
+									sx={{
+										display: 'flex',
+										justifyContent: 'center',
+										alignItems: 'center',
+									}}
+								>
+									<img
+										src={`${AboutImgPath}`}
+										style={{ width: '100%', height: '70%' }}
+										alt=""
+									/>
+								</CardMedia>
+							</Fade>
 						</Slide>
 					</Card>
 				</Grid>
@@ -91,28 +115,47 @@ const About = () => {
 						},
 					}}
 				>
-					<Slide direction="right" triggerOnce>
-						<Typography
-							sx={{ textAlign: 'justify', opacity: 0.7 }}
-							variant="body1"
-						>
-							Indian Society for Technical Education (ISTE) is a National level
-							non-profit Society for the Technical Education System in our
-							country. ISTE assists and contributes to the production and
-							development of top quality professional technocrats. It has over
-							1505 Student Chapters at the institutional level, one such chapter
-							is ISTE SC MANIT. ISTE SC MANIT is one of the oldest student
-							organizations in MANIT. Started in 2003, it has been actively
-							contributing towards the professional and technical education of
-							the students at MANIT and beyond. It has been conducting national
-							level events like ChimeraX - The Multi-city Quizzing Competition,
-							CODATHON - The Inter NIT Coding Contest, Anubhuti - The Talkshow,
-							Megatreopuz - The Online Cryptic Hunt, Version β - The National
-							level Hackathon. Events like these have gifted ISTE SC MANIT the
-							Best Students' Chapter Award in the MP & Chhattisgarh region, not
-							once but thrice.
-						</Typography>
-					</Slide>
+					{loading ? (
+						<Slide direction="right" triggerOnce>
+							<Typography
+								sx={{ textAlign: 'justify', opacity: 0.7 }}
+								variant="body1"
+							>
+								Indian Society for Technical Education (ISTE) is a National
+								level non-profit Society for the Technical Education System in
+								our country. ISTE assists and contributes to the production and
+								development of top quality professional technocrats. It has over
+								1505 Student Chapters at the institutional level, one such
+								chapter is ISTE SC MANIT. ISTE SC MANIT is one of the oldest
+								student organizations in MANIT. Started in 2003, it has been
+								actively contributing towards the professional and technical
+								education of the students at MANIT and beyond. It has been
+								conducting national level events like ChimeraX - The Multi-city
+								Quizzing Competition, CODATHON - The Inter NIT Coding Contest,
+								Anubhuti - The Talkshow, Megatreopuz - The Online Cryptic Hunt,
+								Version β - The National level Hackathon. Events like these have
+								gifted ISTE SC MANIT the Best Students' Chapter Award in the MP
+								& Chhattisgarh region, not once but thrice.
+							</Typography>
+						</Slide>
+					) : (
+						<div>
+							{Array.from(Array(15)).map((_, index) => (
+								<Skeleton
+									variant="rounded"
+									height={15}
+									key={index}
+									className={classes.pre}
+									animation="wave"
+								/>
+							))}
+						</div>
+					)}
+					{/* <Slide direction="right" triggerOnce>
+						
+
+					
+					</Slide> */}
 				</Grid>
 			</Grid>
 		</Paper>
