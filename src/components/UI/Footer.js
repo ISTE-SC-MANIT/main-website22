@@ -8,106 +8,136 @@ import { LogoLinkedin } from 'react-ionicons';
 import { MapOutline } from 'react-ionicons';
 import { PhonePortraitOutline } from 'react-ionicons';
 import { MailOpen } from 'react-ionicons';
-
+import { Typography } from '@mui/material';
 const Footer = (props) => {
 	return (
-		<div class="footer-container-main hidden" id="footer">
-			<div class="footer-container">
-				<div class="footer-left">
-					<div class="footer-block">
-						<h3 class="center-text">
-							<MapOutline color={'white'} height="50px" width="50px" /> Address
+		<div className="footer-container-main hidden" id="footer">
+			<div className="footer-container">
+				<div className="footer-left">
+					<div className="footer-block">
+						<h3 className="center-text">
+							<MapOutline color={'#0270D7'} height="40px" width="40px" />{' '}
+							Address
 						</h3>
-						<p class="center-text">
+						<p className="center-text">
 							<a
 								href="https://goo.gl/maps/nTNnuX6w5YbGKTic7"
 								target="_blank"
-								className="text"
+								classNameName="text"
+								style={{ textDecoration: 'none', color: 'white' }}
 							>
-								Maulana Azad National Institute of Technology, Bhopal
+								<Typography>
+									Maulana Azad National Institute of Technology, Bhopal
+								</Typography>
 							</a>{' '}
 						</p>
 					</div>
 				</div>
-				<div class="footer-mid">
-					<div class="footer-block">
-						<h3 class="center-text">
+				<div className="footer-mid">
+					<div className="footer-block">
+						<h3 className="center-text">
 							<PhonePortraitOutline
-								color={'white'}
+								color={'#0270D7'}
 								height="50px"
 								width="50px"
 							/>{' '}
 							Contact
 						</h3>
 						<p>
-							<a href="tel://9140160345" target="_blank" className="text">
-								<i class="fas fa-phone " aria-hidden="true"></i>
-								Animesh Nayak +91 8504036415
+							<a
+								href="tel://9140160345"
+								target="_blank"
+								classNameName="text"
+								style={{ textDecoration: 'none' }}
+							>
+								{/* <i className="fas fa-phone " aria-hidden="true"></i> */}
+								<Typography
+									sx={{ color: 'white', textDecoration: 'none' }}
+									variant="body2"
+								>
+									Animesh Nayak +91 8504036415
+								</Typography>
 							</a>
 						</p>
 						<p>
-							<a href="tel://9140160345" target="_blank" className="text">
-								<i class="fas fa-phone " aria-hidden="true"></i>
-								Navyasree Konagalla +91 9490165056
+							<a
+								href="tel://9140160345"
+								target="_blank"
+								classNameName="text"
+								style={{ textDecoration: 'none' }}
+							>
+								{/* <i className="fas fa-phone " aria-hidden="true"></i> */}
+								<Typography
+									sx={{ color: 'white', textDecoration: 'none' }}
+									variant="body2"
+								>
+									Navyasree Konagalla +91 9490165056
+								</Typography>
 							</a>
 						</p>
 					</div>
 				</div>
-				<div class="footer-right">
-					<div class="footer-block">
-						<h3 class="center-text">
-							<MailOpen color={'white'} height="50px" width="50px" /> Email
+				<div className="footer-right">
+					<div className="footer-block">
+						<h3 className="center-text">
+							<MailOpen color={'#0270D7'} height="40px" width="40px" /> Email
 							Address
 						</h3>
-						<p class="center-text">
+						<p className="center-text" style={{ color: 'white' }}>
 							<a
 								href="mailto:istescmanit@gmail.com"
-								className="text"
+								classNameName="text"
 								target="_blank"
+								style={{ textDecoration: 'none', color: 'white' }}
 							>
-								istescmanit@gmail.com
+								<Typography>istescmanit@gmail.com</Typography>
 							</a>
 						</p>
 					</div>
 				</div>
 			</div>
-			<div class="line"></div>
-			<div class="footer-block">
-				<h3 class="center-text">
-					<i class="fas fa-link" aria-hidden="true"></i>
+			<div className="line"></div>
+			<div className="footer-block">
+				<h3 className="center-text">
+					<i className="fas fa-link" aria-hidden="true"></i>
 					Social Links
 				</h3>
-				<div class="social-icon">
-					<div class="icon">
+				<div className="social-icon">
+					<div className="icon">
 						<a href="https://www.instagram.com/istemanit" target="_blank">
-							<LogoInstagram color={'white'} height="50px" width="50px" />
+							<LogoInstagram color={'white'} height="40px" width="40px" />
 						</a>
 					</div>
-					<div class="icon">
+					<div className="icon">
 						<a href="https://www.facebook.com/ISTESCMANIT" target="_blank">
-							<i class="fab fa-facebook fa-2x"></i>
-							<LogoFacebook color={'white'} height="50px" width="50px" />
+							<i className="fab fa-facebook fa-2x"></i>
+							<LogoFacebook color={'white'} height="40px" width="40px" />
 						</a>
 					</div>
-					<div class="icon">
+					<div className="icon">
 						<a
 							href="https://www.linkedin.com/company/iste-sc-manit"
 							target="_blank"
 						>
-							<LogoLinkedin color={'white'} height="50px" width="50px" />
+							<LogoLinkedin color={'white'} height="40px" width="40px" />
 						</a>
 					</div>
 				</div>
 			</div>
-			<div class="line"></div>
-			<p class="copyright">
+			<div className="line"></div>
+			<p className="copyright" style={{ color: 'white' }}>
 				Copyright © 2022 by{' '}
 				<span>
-					<a href="https://istemanit.in/" className="text" target="_blank">
+					<a
+						href="https://istemanit.in/"
+						classNameName="text"
+						target="_blank"
+						style={{ textDecoration: 'none', color: '#0270D7' }}
+					>
 						ISTE-SC MANIT
 					</a>
 				</span>
-				. <span class="all">All rights reserved.</span>
+				. <span className="all">All rights reserved.</span>
 			</p>
 		</div>
 	);

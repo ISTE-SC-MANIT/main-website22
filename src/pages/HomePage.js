@@ -16,31 +16,29 @@ import Team from '../components/Team/Team';
 
 import TeamPage from '../pages/TeamPage';
 
-
 function App() {
-    return (
-        <>
-            <Navbar />
-            <Header></Header>
-            {/* <Slide triggerOnce direction="right"> */}
-            <About></About>
+	return (
+		<>
+			<Navbar />
+			<Header></Header>
+			{/* <Slide triggerOnce direction="up"> */}
+			{/* <Slide></Slide> */}
+			<About></About>
+			{/* </Slide> */}
+			{/* <Slide triggerOnce direction="up"> */}
+			<EventsContainer />
+			{/* </Slide> */}
 
-            {/* </Slide> */}
-            {/* <Slide triggerOnce direction="up"> */}
-            <EventsContainer />
-            {/* </Slide> */}
-
-            <BreakLine />
-            {/* <Team/> */}
-            <Slide triggerOnce>
-                <Sponsors>{/* */}</Sponsors>
-
-            </Slide>
-            <Slide triggerOnce direction="left">
-                <Footer></Footer>
-            </Slide>
-        </>
-    );
+			<BreakLine />
+			{/* <Team/> */}
+			<Slide triggerOnce>
+				<Sponsors>{/* */}</Sponsors>
+			</Slide>
+			<Slide triggerOnce direction="left">
+				<Footer></Footer>
+			</Slide>
+		</>
+	);
 }
 
 export default App;

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Typography } from '@mui/material';
+import { cardActionAreaClasses, Typography } from '@mui/material';
 import Grid from '@mui/material/Grid';
 import { Button, Card, CardMedia, CardActions } from '@mui/material';
 
@@ -12,8 +12,17 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import { Tooltip } from '@mui/material';
 import { Fade } from 'react-awesome-reveal';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import { ClassNames } from '@emotion/react';
+import { makeStyles } from '@material-ui/styles';
+
+const useStyles = makeStyles({
+	card: {
+		background: '#242830',
+	},
+});
 const Container4 = (props) => {
-	console.log(props.data);
+	// console.log(props.data);
+	const classes = useStyles();
 	const [loading, setLoading] = useState(false);
 	useEffect(() => {
 		setTimeout(() => {
@@ -42,7 +51,7 @@ const Container4 = (props) => {
 						damping={0.7}
 						style={{ margin: '1rem', marginLeft: '1.87rem' }}
 					>
-						<Grid item key={index} spacing={2} gap={2}>
+						<Grid item key={index} spacing={2} gap={2} className={classes.card}>
 							<Card
 								sx={{
 									height: '400px',

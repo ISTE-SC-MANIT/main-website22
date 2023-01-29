@@ -11,7 +11,7 @@
 	position: relative;
 	width: 100%;
 	color: white;
-	background-color: rgb(11, 32, 70);
+	background-color: #23272f;
 	min-height: 50vh;
 }
 
@@ -93,7 +93,7 @@
 }
 
 .footer-block p:hover {
-	color: #fca311;
+	color: #0270d7;
 	transform: scale(1.01);
 }
 
@@ -134,7 +134,7 @@
 } */
 .conduct-block a:hover {
 	transform: scale(1.01);
-	color: #fca311;
+	color: #0270d7;
 }
 
 .center-text-button {
@@ -271,7 +271,7 @@ h3 {
 	width: 70%;
 	margin-block: none;
 	margin-inline: 20%;
-	background-color: #fca311;
+	background-color: #0270d7;
 	height: 1px;
 }
 
@@ -288,7 +288,7 @@ h3 {
 	align-items: center;
 	width: 70%;
 	text-align: center;
-	color: #fca311;
+	color: #0270d7;
 }
 
 @media (max-width: 822px) {

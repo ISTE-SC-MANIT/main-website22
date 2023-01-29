@@ -25,7 +25,6 @@ const Navbar = (props) => {
 				<img src={ISTElogo} />
 			</div>
 			<div className={style['navlinks-container']}>
-
 				<Navlink href="/main-website22">Home</Navlink>
 				<Navlink href="/main-website22#about">About us</Navlink>
 				<Navlink href="/main-website22#events">Events</Navlink>
@@ -47,13 +46,13 @@ const Navbar = (props) => {
 					className={`${style.ham} ${style['align-left']}`}
 					onClick={hamClickHandler}
 				>
-					<h1>X</h1>
+					<h1 className="CrossHam">X</h1>
 				</div>
 				<Navlink href="/main-website22">Home</Navlink>
 				<Navlink href="/main-website22#about">About us</Navlink>
 				<Navlink href="/main-website22#events">Events</Navlink>
 				<Navlink href="/main-website22#sponsors">Sponsors</Navlink>
-				<Navlink href="/team">Our Team</Navlink>
+				<Navlink to="/team">Our Team</Navlink>
 				<Navlink href="#footer">Contact Us</Navlink>
 			</ul>
 			<div

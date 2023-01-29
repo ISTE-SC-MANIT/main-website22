@@ -19,7 +19,7 @@ import { Grow } from '@mui/material';
 const data = [
 	{
 		id: 0,
-		image: require(`../../assets/sponsors/coding-ninjas-logos-idFrWdCkB5.png`),
+		image: require(`../../assets/sponsors/conding-ninja-white.png`),
 		path: `https://bit.ly/3Updcil`,
 	},
 	{
@@ -29,17 +29,17 @@ const data = [
 	},
 	{
 		id: 2,
-		image: require(`../../assets/sponsors/taskade-circle-logo-full-black.png`),
+		image: require(`../../assets/sponsors/Download/tascade_white.png`),
 		path: 'https://www.taskade.com/',
 	},
 	{
 		id: 3,
-		image: require(`../../assets/sponsors/Celo Logo Color@2x.png`),
+		image: require(`../../assets/sponsors/Download/celo_white.png`),
 		path: null,
 	},
 	{
 		id: 4,
-		image: require(`../../assets/sponsors/Devfolio_Logo-Colored.png`),
+		image: require(`../../assets/sponsors/Devfolio_Logo-White2x.png`),
 		path: 'https://devfolio.co/home/',
 	},
 	{
@@ -49,7 +49,7 @@ const data = [
 	},
 	{
 		id: 6,
-		image: require(`../../assets/sponsors/echo3D - Logo 2021 - Dark.png`),
+		image: require(`../../assets/sponsors/echo-white.png`),
 		path: 'https://www.echo3d.com/',
 	},
 	{
@@ -57,31 +57,31 @@ const data = [
 		image: require(`../../assets/sponsors/ELearnmarket Logo.png`),
 		path: 'https://www.elearnmarkets.com/?utm_source=google.com&utm_medium=cpc&utm_campaign=branding-search',
 	},
-	{
-		id: 8,
-		image: require(`../../assets/sponsors/engi-circle.png`),
-		path: '',
-	},
+	// {
+	// 	id: 8,
+	// 	image: require(`../../assets/sponsors/engi-circle.png`),
+	// 	path: '',
+	// },
 	{
 		id: 9,
-		image: require(`../../assets/sponsors/Filecoin Coloured White Text.png`),
+		image: require(`../../assets/sponsors/Filecoin-logo-removebg-preview.png`),
 		path: 'https://filecoin.io/',
 	},
-	{
-		id: 10,
-		image: require(`../../assets/sponsors/foxmula.png`),
-		path: '',
-	},
-	{
-		id: 11,
-		image: require(`../../assets/sponsors/GDG Chapter lockup - GDG Bhopal.png`),
-		path: 'https://gdg.community.dev/gdg-cloud-bhopal/',
-	},
-	{
-		id: 12,
-		image: require(`../../assets/sponsors/GitHub_Logo.png`),
-		path: 'https://github.com/',
-	},
+	// {
+	// 	id: 10,
+	// 	image: require(`../../assets/sponsors/foxmula.png`),
+	// 	path: '',
+	// },
+	// {
+	// 	id: 11,
+	// 	image: require(`../../assets/sponsors/GDG Chapter lockup - GDG Bhopal.png`),
+	// 	path: 'https://gdg.community.dev/gdg-cloud-bhopal/',
+	// },
+	// {
+	// 	id: 12,
+	// 	image: require(`../../assets/sponsors/Download/GitHub-Mark.png`),
+	// 	path: 'https://github.com/',
+	// },
 	// {
 	// 	id: 13,
 	// 	image: require(`../../assets/sponsors/GMC LogoS.png`),
@@ -89,7 +89,7 @@ const data = [
 	// },
 	{
 		id: 14,
-		image: require(`../../assets/sponsors/GUVI-logo-black-1024x496.png`),
+		image: require(`../../assets/sponsors/guvi-white.png`),
 		path: 'https://www.guvi.in/',
 	},
 	{
@@ -119,22 +119,22 @@ const data = [
 	},
 	{
 		id: 20,
-		image: require(`../../assets/sponsors/myways.jpeg`),
+		image: require(`../../assets/sponsors/Download/myways-removebg-preview.png`),
 		path: 'https://myways.ai/',
 	},
 	{
 		id: 21,
-		image: require(`../../assets/sponsors/Polygon_Logo-Dark.png`),
+		image: require(`../../assets/sponsors/polygon-logo-white-5728881-4816871-2.png`),
 		path: 'https://polygon.technology/',
 	},
 	{
 		id: 22,
-		image: require(`../../assets/sponsors/download.png`),
+		image: require(`../../assets/sponsors/replit-img-white.png`),
 		path: 'https://replit.com/',
 	},
 	{
 		id: 23,
-		image: require(`../../assets/sponsors/seekho.jpeg`),
+		image: require(`../../assets/sponsors/seekho Logo.png`),
 		path: '',
 	},
 	{
@@ -144,7 +144,7 @@ const data = [
 	},
 	{
 		id: 25,
-		image: require(`../../assets/sponsors/solona_b.png`),
+		image: require(`../../assets/sponsors/solana-img-white.png`),
 		path: 'https://solana.com/',
 	},
 	{
@@ -152,11 +152,11 @@ const data = [
 		image: require(`../../assets/sponsors/stand-out-stickers-logo.png`),
 		path: '',
 	},
-	{
-		id: 27,
-		image: require(`../../assets/sponsors/sponsor.png`),
-		path: '',
-	},
+	// {
+	// 	id: 27,
+	// 	image: require(`../../assets/sponsors/sponsor.png`),
+	// 	path: '',
+	// },
 	{
 		id: 28,
 		image: require(`../../assets/sponsors/techcryptors.png`),
@@ -164,14 +164,14 @@ const data = [
 	},
 	{
 		id: 29,
-		image: require(`../../assets/sponsors/Tezos_Logo-Colored@2x.png`),
+		image: require(`../../assets/sponsors/tezos-logo-63E81F3064-seeklogo.com-removebg-preview (190).png`),
 		path: 'https://tezos.com/',
 	},
-	{
-		id: 30,
-		image: require(`../../assets/sponsors/Foxmula-logo-black-365x365.png`),
-		path: '',
-	},
+	// {
+	// 	id: 30,
+	// 	image: require(`../../assets/sponsors/Foxmula-logo-black-365x365.png`),
+	// 	path: '',
+	// },
 ];
 const Sponsors = () => {
 	const [loading, setLoading] = useState(false);
@@ -184,11 +184,17 @@ const Sponsors = () => {
 	});
 	return (
 		<div id="sponsors">
-			<Paper sx={{ marginTop: '2rem', marginBottom: '5rem' }}>
+			<Paper
+				sx={{
+					marginTop: '2rem',
+					marginBottom: '5rem',
+					background: 'rgb(29 32 38)',
+				}}
+			>
 				<Typography
 					variant="h3"
 					size="small"
-					sx={{ textAlign: 'center', color: 'black', padding: '2rem' }}
+					sx={{ textAlign: 'center', color: '#0270D7', padding: '2rem' }}
 				>
 					<Slide direction="down" triggerOnce>
 						Our Sponsors
@@ -217,7 +223,7 @@ const Sponsors = () => {
 									spacing={1}
 									key={spo.id}
 									sx={{
-										backgroundColor: '#ECECED',
+										backgroundColor: '#23272f',
 										padding: '0',
 										borderRadius: '10px',
 										margin: '0.6rem',
@@ -241,7 +247,7 @@ const Sponsors = () => {
 												alt=""
 												style={{
 													height: 'auto',
-													width: '95%',
+													width: '78%',
 													borderRadius: '10px',
 													// zIndex: '-100',
 												}}
