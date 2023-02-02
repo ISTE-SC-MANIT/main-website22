@@ -136,6 +136,9 @@
 
     .buttonContainer{
         width: 90%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 
