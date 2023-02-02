@@ -14,9 +14,20 @@ const Event = (props) => {
 				src={props.imageSrc}
 				onClick={props.onClick}
 			/>
-			<Button name={props.name} onClick={props.onClick}>
-				Know More
-			</Button>
+
+
+			<div className={style.buttonContainer}>
+				<a
+					href={props.website}
+					target="_blank"
+					className={style.website}
+				>
+					Visit Website
+				</a>
+				<Button name={props.name} onClick={props.onClick}>
+					Know More
+				</Button>
+			</div>
 		</div>
 	);
 };

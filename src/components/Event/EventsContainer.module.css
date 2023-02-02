@@ -1,6 +1,6 @@
-.eventContainer{
-    width:80%;
-    z-index:10;
+.eventContainer {
+    width: 80%;
+    z-index: 10;
     margin: auto;
     display: grid;
     margin: auto;
@@ -8,36 +8,42 @@
     place-items: center;
 
     padding: 50px;
- 
+
     /* border: 1px solid rgb(17, 31, 85); */
 }
 
-.eventBG{
+.eventBG {
     padding-block: 0.5rem;
-    width:100%;
-    margin-inline:auto;
+    width: 100%;
+    margin-inline: auto;
     background: url('../../assets/Backgrounds/bg4.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.heading{
+.heading {
     text-align: center;
     margin-top: 2em;
 }
 
-@media (max-width: 1000px){
-    .eventContainer{
+@media(max-width: 900px) {
+    .eventContainer {
+        width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    .eventContainer {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding:25px;
+        padding: 25px;
         width: 88%;
     }
 
-    .eventBG{
+    .eventBG {
         padding: 0;
 
     }

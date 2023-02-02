@@ -14,21 +14,25 @@ const EventModal = (props) => {
 				<h1 className={style.eventHeading}>{props.eventData.heading}</h1>
 				<h2 className={style.title}>{props.eventData.title}</h2>
 				<h4>{props.eventData.date}</h4>
-				<Typography
-					variant="body1"
-					sx={{ padding: '2rem' }}
-					textAlign="justify"
-				>
+				<p className={style.description}>
 					{props.eventData.description}
-				</Typography>
-				<a
-					href={props.eventData.website}
-					target="_blank"
-					className={style.website}
-				>
-					Visit Website
-				</a>
-				<Button onClick={props.onCloseModal}>Close</Button>
+				</p>
+
+
+
+				<div className={style.buttonContainer}>
+					<a
+						href={props.eventData.website}
+						target="_blank"
+						className={style.website}
+					>
+						Visit Website
+					</a>
+					<div className={style.buttonContainer}>						
+						<Button onClick={props.onCloseModal}>Close</Button>
+					</div>
+				</div>
+
 			</div>
 		</>
 	);

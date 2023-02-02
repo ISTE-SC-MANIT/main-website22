@@ -48,12 +48,12 @@ const Navbar = (props) => {
 				>
 					<h1 className="CrossHam">X</h1>
 				</div>
-				<Navlink href="/main-website22">Home</Navlink>
-				<Navlink href="/main-website22#about">About us</Navlink>
-				<Navlink href="/main-website22#events">Events</Navlink>
-				<Navlink href="/main-website22#sponsors">Sponsors</Navlink>
-				<Navlink to="/team">Our Team</Navlink>
-				<Navlink href="#footer">Contact Us</Navlink>
+				<Navlink onClick={hamClickHandler} href="/main-website22">Home</Navlink>
+				<Navlink onClick={hamClickHandler} href="/main-website22#about">About us</Navlink>
+				<Navlink onClick={hamClickHandler} href="/main-website22#events">Events</Navlink>
+				<Navlink onClick={hamClickHandler} href="/main-website22#sponsors">Sponsors</Navlink>
+				<Navlink onClick={hamClickHandler} to="/team">Our Team</Navlink>
+				<Navlink onClick={hamClickHandler} href="#footer">Contact Us</Navlink>
 			</ul>
 			<div
 				className={`${mobNav ? style.hide : ''} ${style.ham}`}

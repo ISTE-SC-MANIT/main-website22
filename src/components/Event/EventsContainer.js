@@ -120,6 +120,7 @@ const EventsContainer = (props) => {
 					) : (
 						<Event
 							name={event.id}
+							website={event.website}
 							onClick={knowMoreHandler}
 							imageSrc={require(`../../assets/EventImages/${event.name}.jpg`)}
 						/>
