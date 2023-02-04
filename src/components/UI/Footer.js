@@ -105,13 +105,13 @@ const Footer = (props) => {
 				<div className="social-icon">
 					<div className="icon">
 						<a href="https://www.instagram.com/istemanit" target="_blank">
-							<LogoInstagram color={'white'} height="40px" width="40px" />
+							<LogoInstagram color={'white'} height="50px" width="50px" />
 						</a>
 					</div>
 					<div className="icon">
 						<a href="https://www.facebook.com/ISTESCMANIT" target="_blank">
-							<i className="fab fa-facebook fa-2x"></i>
-							<LogoFacebook color={'white'} height="40px" width="40px" />
+							{/* <i className="fab fa-facebook fa-2x"></i> */}
+							<LogoFacebook color={'white'} height="50px" width="50px" />
 						</a>
 					</div>
 					<div className="icon">
@@ -119,7 +119,7 @@ const Footer = (props) => {
 							href="https://www.linkedin.com/company/iste-sc-manit"
 							target="_blank"
 						>
-							<LogoLinkedin color={'white'} height="40px" width="40px" />
+							<LogoLinkedin color={'white'} height="50px" width="50px" />
 						</a>
 					</div>
 				</div>
