@@ -4,6 +4,7 @@ import { Button } from '@mui/material';
 import './Home.css';
 import { makeStyles } from '@material-ui/styles';
 import { Typography } from '@mui/material';
+
 const useStyles = makeStyles({
 	contactUs: {
 		color: 'whitesmoke',
