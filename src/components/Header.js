@@ -56,7 +56,8 @@ export const App = () => {
 									style={{ fill: 'transparent' }}
 								/>
 							</svg>
-							<div
+						</div>
+						{/* <div
 								className="hero-figure-box hero-figure-box-01"
 								data-rotation="45deg"
 							/>
@@ -87,7 +88,7 @@ export const App = () => {
 								className="hero-figure-box hero-figure-box-10"
 								data-rotation="-50deg"
 							/>
-						</div>
+						</div> */}
 					</div>
 				</div>
 			</section>

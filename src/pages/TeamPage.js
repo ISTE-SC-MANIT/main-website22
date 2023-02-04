@@ -60,9 +60,13 @@ const priority = {
 data.forEach((entry) => {
 	if (entry['photo'] != undefined) {
 		if (entry['photo'].indexOf('drive') == -1) entry.imgsrc = entry['photo'];
-		else entry.imgsrc = parseImage(entry['photo']);
+		else if (entry['photo'].indexOf('github') == -1) {
+			entry.imgsrc = parseImage(entry['photo']);
+		} else {
+			entry.imgsrc = require(`${entry['photo']}`);
+		}
 	} else {
-		entry.imgsrc = `../assets/team_img/dummy.png`;
+		entry.imgsrc = require(`../assets/team_img/dummy.png`);
 	}
 
 	entry['priority'] = -1;

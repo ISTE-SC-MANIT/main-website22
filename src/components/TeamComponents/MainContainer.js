@@ -19,6 +19,9 @@ const useStyles = makeStyles({
 	card: {
 		background: '#242830',
 	},
+	heading__: {
+		color: 'black',
+	},
 });
 const Container4 = (props) => {
 	// console.log(props.data);
@@ -31,7 +34,11 @@ const Container4 = (props) => {
 	});
 	return (
 		<>
-			<Typography variant="h4" textAlign={'center'}>
+			<Typography
+				variant="h4"
+				textAlign={'center'}
+				className={classes.heading__}
+			>
 				{props.year} Year
 			</Typography>
 			<Grid
@@ -76,8 +83,8 @@ const Container4 = (props) => {
 											sx={{
 												borderRadius: '50%',
 												width: '60%',
+												height: '250px',
 												'@media(max-width:450px)': {
-													width: '53%',
 													height: '185px',
 												},
 												objectFit: 'inherit',
