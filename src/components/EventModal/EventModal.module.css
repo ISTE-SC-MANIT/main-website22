@@ -52,7 +52,7 @@
 	/* border: 1px solid rgba(0, 140, 2, 0.527); */
 	border-radius: 3px;
 	text-decoration: none;
-	text-align:center ;
+	text-align: center;
 	color: white;
 	background-color: #e8be01;
 	width: 100%;
@@ -94,7 +94,7 @@
 	margin-top: px;
 	margin-bottom: 3px;
 	line-height: 0;
-	color: rgb(68, 155, 246); 
+	color: rgb(68, 155, 246);
 }
 
 .title {
@@ -137,7 +137,7 @@
 		left: 3%;
 		margin-inline: auto;
 		top: 13%;
-		height: auto;
+		height: 80vh;
 		overflow-y: scroll;
 	}
 
