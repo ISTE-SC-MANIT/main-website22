@@ -55,7 +55,8 @@ const Container4 = (props) => {
 				sx={{
 					justifyContent: 'center',
 					alignItems: 'center',
-					padding: '2rem',
+					// padding: '2rem',
+					padding: '20px 200px',
 					background: 'rgb(29 ,32, 38)',
 				}}
 			>
