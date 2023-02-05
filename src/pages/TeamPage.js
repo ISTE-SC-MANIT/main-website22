@@ -47,8 +47,8 @@ const priority = {
 	// Designer: 9,
 
 	'Executive and Content Writer': 10,
-	'Web Developer': 9,
-	'Web developer': 9,
+	'Web Developer': 4,
+	'Web developer': 4,
 	'Graphic Designer': 8,
 	'Content Writer': 7,
 	'Content writer': 7,

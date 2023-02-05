@@ -551,6 +551,15 @@ const data = [
 		photo: 'https://drive.google.com/open?id=1A3GDarrHLH0vZVH4pln1DCJCL7RR6_yu',
 	},
 	{
+		name: 'Vibhuti Deshmukh',
+		year: '3rd',
+		vertical: 'Head Finance',
+		linkedinProfile: 'https://www.linkedin.com/in/vibhuti-deshmukh-b9694920a/',
+		instagramProfile: 'https://www.instagram.com/vibs.____/',
+		facebookProfile: 'https://www.facebook.com/vibhuti.deshmukh.104',
+		photo: require('../assets/team_img/Team__Download/vibhuti.jpg'),
+	},
+	{
 		timestamp: '2022-11-14T08:16:51.921Z',
 		name: 'Pradhuman Mahor',
 		year: '3rd',
