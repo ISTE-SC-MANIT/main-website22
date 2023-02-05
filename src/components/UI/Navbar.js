@@ -7,7 +7,7 @@ import ISTElogo from '../../assets/ISTElogo.svg';
 import ham from '../../assets/ham.png';
 import style from './Navbar.module.css';
 import About from '../About/About';
-
+import {CloseOutline} from 'react-ionicons';
 const Navbar = (props) => {
 	const [mobNav, setMobNav] = useState(false);
 	const hamClickHandler = (event) => {
@@ -46,7 +46,10 @@ const Navbar = (props) => {
 					className={`${style.ham} ${style['align-left']}`}
 					onClick={hamClickHandler}
 				>
-					<h1 className="CrossHam">X</h1>
+					{/* <h1 className="CrossHam">X</h1> */}
+					<CloseOutline
+						color="white" width="30px" height="30px"
+					/>
 				</div>
 				<Navlink onClick={hamClickHandler} href="/main-website22">Home</Navlink>
 				<Navlink onClick={hamClickHandler} href="/main-website22#about">About us</Navlink>

@@ -25,6 +25,9 @@
 .heading {
     text-align: center;
     margin-top: 2em;
+    color:rgb(68, 155, 246);
+    font-size: 54px;
+    font-weight: 400;
 }
 
 @media(max-width: 900px) {
