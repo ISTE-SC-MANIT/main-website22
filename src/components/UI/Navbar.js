@@ -25,12 +25,20 @@ const Navbar = (props) => {
 				<img src={ISTElogo} />
 			</div>
 			<div className={style['navlinks-container']}>
-				<Navlink href="/main-website22">Home</Navlink>
+				<Link
+					to="/main-website22"
+					style={{ color: 'white', textDecoration: 'none' }}
+				>
+					Home
+				</Link>
 				<Navlink href="/main-website22#about">About us</Navlink>
 				<Navlink href="/main-website22#events">Events</Navlink>
 				<Navlink href="/main-website22#sponsors">Sponsors</Navlink>
 				<Navlink>
-					<Link to="/team" style={{ color: 'white', textDecoration: 'none' }}>
+					<Link
+						to="/main-website22/team"
+						style={{ color: 'white', textDecoration: 'none' }}
+					>
 						Our Team
 					</Link>
 				</Navlink>
@@ -48,12 +56,28 @@ const Navbar = (props) => {
 				>
 					<h1 className="CrossHam">X</h1>
 				</div>
-				<Navlink onClick={hamClickHandler} href="/main-website22">Home</Navlink>
-				<Navlink onClick={hamClickHandler} href="/main-website22#about">About us</Navlink>
-				<Navlink onClick={hamClickHandler} href="/main-website22#events">Events</Navlink>
-				<Navlink onClick={hamClickHandler} href="/main-website22#sponsors">Sponsors</Navlink>
-				<Navlink onClick={hamClickHandler} to="/team">Our Team</Navlink>
-				<Navlink onClick={hamClickHandler} href="#footer">Contact Us</Navlink>
+				<Link
+					onClick={hamClickHandler}
+					style={{ color: 'white', textDecoration: 'none' }}
+					to="/main-website22"
+				>
+					Home
+				</Link>
+				<Navlink onClick={hamClickHandler} to="/main-website22#about">
+					About us
+				</Navlink>
+				<Navlink onClick={hamClickHandler} href="/main-website22#events">
+					Events
+				</Navlink>
+				<Navlink onClick={hamClickHandler} href="/main-website22#sponsors">
+					Sponsors
+				</Navlink>
+				<Navlink onClick={hamClickHandler} to="/main-website22/team">
+					Our Team
+				</Navlink>
+				<Navlink onClick={hamClickHandler} href="#footer">
+					Contact Us
+				</Navlink>
 			</ul>
 			<div
 				className={`${mobNav ? style.hide : ''} ${style.ham}`}

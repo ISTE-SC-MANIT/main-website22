@@ -207,7 +207,7 @@ const Sponsors = () => {
 						alignItems: 'center',
 						justifyContent: 'center',
 						paddingBottom: '2rem',
-						padding: '3rem',
+						padding: '0rem 9rem',
 					}}
 				>
 					{data.map((spo, index) => (

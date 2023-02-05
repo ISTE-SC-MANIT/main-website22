@@ -9,7 +9,7 @@ const router = createBrowserRouter([
 		element: <HomePage />,
 	},
 	{
-		path: '/team',
+		path: '/main-website22/team',
 		element: <TeamPage />,
 	},
 ]);
