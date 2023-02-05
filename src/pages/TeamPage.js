@@ -59,8 +59,9 @@ const priority = {
 
 data.forEach((entry) => {
 	if (entry['photo'] != undefined) {
-		if (entry['photo'].indexOf('drive') == -1) entry.imgsrc = entry['photo'];
-		else if (entry['photo'].indexOf('github') == -1) {
+		if (entry['photo'].indexOf('drive') == -1) {
+			entry.imgsrc = entry['photo'];
+		} else if (entry['photo'].indexOf('github') == -1) {
 			entry.imgsrc = parseImage(entry['photo']);
 		} else {
 			entry.imgsrc = require(`${entry['photo']}`);
