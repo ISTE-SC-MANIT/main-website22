@@ -98,10 +98,9 @@ const Footer = (props) => {
 			</div>
 			<div className="line"></div>
 			<div className="footer-block">
-				<h3 className="center-text">
-					<i className="fas fa-link" aria-hidden="true"></i>
+				<span className="center-text">
 					Social Links
-				</h3>
+				</span>
 				<div className="social-icon">
 					<div className="icon">
 						<a href="https://www.instagram.com/istemanit" target="_blank">

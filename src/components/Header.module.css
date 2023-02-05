@@ -23,6 +23,10 @@
 	animation: appearHead 1s;
 }
 
+.appearAnim{
+	animation: appearHead 1s;
+}
+
 @keyframes appearHead {
 	from {
 		opacity: 0;

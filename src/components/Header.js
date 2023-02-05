@@ -4,6 +4,8 @@ import { Button } from '@mui/material';
 import './Home.css';
 import { makeStyles } from '@material-ui/styles';
 import { Typography } from '@mui/material';
+import classes from './Header.module.css';
+
 const useStyles = makeStyles({
 	contactUs: {
 		color: 'whitesmoke',
@@ -17,7 +19,7 @@ const useStyles = makeStyles({
 export const App = () => {
 	const classes = useStyles();
 	return (
-		<div>
+		<div className={classes.appearAnim}>
 			<section className="hero">
 				<div className="container">
 					<div className="hero-inner">
