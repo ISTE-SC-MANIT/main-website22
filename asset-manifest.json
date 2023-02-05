@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/main-website22/static/css/main.42c0e2a0.css",
+    "main.css": "/main-website22/static/css/main.e7134bd5.css",
     "main.js": "/main-website22/static/js/main.ac0a8561.js",
     "static/js/787.0c4dd52e.chunk.js": "/main-website22/static/js/787.0c4dd52e.chunk.js",
     "static/media/Team.JPG": "/main-website22/static/media/Team.16f202e5b1622ab77a65.JPG",
@@ -49,12 +49,12 @@
     "static/media/solana-img-white.png": "/main-website22/static/media/solana-img-white.c65a43deed17c49a83a7.png",
     "static/media/tezos-logo-63E81F3064-seeklogo.com-removebg-preview (190).png": "/main-website22/static/media/tezos-logo-63E81F3064-seeklogo.com-removebg-preview (190).0e2f68ff3247aa3bc0ed.png",
     "index.html": "/main-website22/index.html",
-    "main.42c0e2a0.css.map": "/main-website22/static/css/main.42c0e2a0.css.map",
+    "main.e7134bd5.css.map": "/main-website22/static/css/main.e7134bd5.css.map",
     "main.ac0a8561.js.map": "/main-website22/static/js/main.ac0a8561.js.map",
     "787.0c4dd52e.chunk.js.map": "/main-website22/static/js/787.0c4dd52e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.42c0e2a0.css",
+    "static/css/main.e7134bd5.css",
     "static/js/main.ac0a8561.js"
   ]
 }
