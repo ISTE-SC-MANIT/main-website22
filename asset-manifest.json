@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/main-website22/static/css/main.e7134bd5.css",
-    "main.js": "/main-website22/static/js/main.a4044421.js",
+    "main.js": "/main-website22/static/js/main.41600e29.js",
     "static/js/787.0c4dd52e.chunk.js": "/main-website22/static/js/787.0c4dd52e.chunk.js",
     "static/media/Team.JPG": "/main-website22/static/media/Team.16f202e5b1622ab77a65.JPG",
     "static/media/yuvraj.jpg": "/main-website22/static/media/yuvraj.19b82fa5e1b756de182c.jpg",
@@ -51,11 +51,11 @@
     "static/media/tezos-logo-63E81F3064-seeklogo.com-removebg-preview (190).png": "/main-website22/static/media/tezos-logo-63E81F3064-seeklogo.com-removebg-preview (190).0e2f68ff3247aa3bc0ed.png",
     "index.html": "/main-website22/index.html",
     "main.e7134bd5.css.map": "/main-website22/static/css/main.e7134bd5.css.map",
-    "main.a4044421.js.map": "/main-website22/static/js/main.a4044421.js.map",
+    "main.41600e29.js.map": "/main-website22/static/js/main.41600e29.js.map",
     "787.0c4dd52e.chunk.js.map": "/main-website22/static/js/787.0c4dd52e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e7134bd5.css",
-    "static/js/main.a4044421.js"
+    "static/js/main.41600e29.js"
   ]
 }
