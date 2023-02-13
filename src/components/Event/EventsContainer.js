@@ -111,7 +111,7 @@ const EventsContainer = (props) => {
 	};
 
 	return (
-		<>
+		<div className={style.bg}>
 			<h1 className={style.heading} id="events">Our Events</h1>
 			<div className={style.eventContainer}>
 				{data.map((event) =>
@@ -130,7 +130,7 @@ const EventsContainer = (props) => {
 					<EventModal onCloseModal={closeModal} eventData={modalData} />
 				)}
 			</div>
-		</>
+		</div>
 	);
 };
 

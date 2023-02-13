@@ -12,13 +12,17 @@ const Navbar = (props) => {
 	const [mobNav, setMobNav] = useState(false);
 	const hamClickHandler = (event) => {
 		event.preventDefault();
+		console.log(event.target.id);
 		if (mobNav === true) {
 			setMobNav(false);
 		} else {
 			setMobNav(true);
 		}
+		return true;
 	};
-
+	const show=()=>{
+		setMobNav(true);
+	}
 	return (
 		<div className={style.navbar}>
 			<div className={`${style['logo']} ${mobNav ? style['hide'] : ''}`}>
@@ -54,31 +58,26 @@ const Navbar = (props) => {
 					className={`${style.ham} ${style['align-left']}`}
 					onClick={hamClickHandler}
 				>
-					{/* <h1 className="CrossHam">X</h1> */}
 					<CloseOutline
 						color="white" width="30px" height="30px"
 					/>
 				</div>
-				<Link
-					onClick={hamClickHandler}
-					style={{ color: 'white', textDecoration: 'none' }}
-					to="/main-website22"
-				>
+				<Navlink id="#home" onClick={hamClickHandler} href="/main-website22" onFocus={show}>
 					Home
-				</Link>
-				<Navlink onClick={hamClickHandler} to="/main-website22#about">
+				</Navlink>
+				<Navlink id="#about" onClick={hamClickHandler} href="/main-website22#about" onFocus={show}>
 					About us
 				</Navlink>
-				<Navlink onClick={hamClickHandler} href="/main-website22#events">
+				<Navlink id="#events" onClick={hamClickHandler} href="/main-website22#events" onFocus={show}>
 					Events
 				</Navlink>
-				<Navlink onClick={hamClickHandler} href="/main-website22#sponsors">
+				<Navlink id="#sponsors" onClick={hamClickHandler} href="/main-website22#sponsors" onFocus={show}>
 					Sponsors
 				</Navlink>
-				<Navlink onClick={hamClickHandler} to="/main-website22/team">
+				<Navlink id="/team" onClick={hamClickHandler} href="/main-website22/team" onFocus={show}>
 					Our Team
 				</Navlink>
-				<Navlink onClick={hamClickHandler} href="#footer">
+				<Navlink onClick={hamClickHandler} href="#footer" onFocus={show}>
 					Contact Us
 				</Navlink>
 			</ul>

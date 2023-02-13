@@ -8,15 +8,25 @@
     place-items: center;
 
     padding: 50px;
+}
 
-    /* border: 1px solid rgb(17, 31, 85); */
+.bg{
+        background-image: url("../../assets//Backgrounds/bg10.jpg");
+        
+            /* Set a specific height */
+            min-height: 400px;
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
 }
 
 .eventBG {
     padding-block: 0.5rem;
     width: 100%;
     margin-inline: auto;
-    background: url('../../assets/Backgrounds/bg4.jpg');
+    background: url('../../assets/Backgrounds/bg5.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -24,7 +34,7 @@
 
 .heading {
     text-align: center;
-    margin-top: 2em;
+    padding-top: 100px;
     color:rgb(68, 155, 246);
     font-size: 54px;
     font-weight: 400;

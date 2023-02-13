@@ -15,6 +15,7 @@ import { Grow } from '@mui/material';
 // import Reveal from 'react-reveal/Reveal';
 // import {View}
 // import sponsors from '../../assets/sponsors';
+import styles from './Sponsors.module.css';
 
 const data = [
 	{

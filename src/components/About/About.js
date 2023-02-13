@@ -12,6 +12,8 @@ import { Fade, Slide } from 'react-awesome-reveal';
 import { Skeleton } from '@mui/material';
 import { makeStyles } from '@material-ui/styles';
 
+import styles from './About.module.css';
+
 const useStyles = makeStyles({
 	root: {
 		border: 0,
@@ -46,23 +48,12 @@ const About = () => {
 
 	return (
 		<div id="about">
-			<Paper
-				className={classes.about}
-				sx={{
-					// minHeight: '80vh',
-					// height: 'auto',
-					// display: 'flex',
-					// flexDirection: 'column',
-					// justifyContent: 'center',
-					background: 'rgb(29 32 38)',
-					paddingTop: '3rem',
-					marginTop: '2rem',
-					paddingBottom: '8rem',
-				}}
+			<div
+				className={styles.bg}
 			>
 				<Typography
 					variant="h3"
-					sx={{ textAlign: 'center', color: '#0270D7;' }}
+					sx={{ textAlign: 'center', color: '#0270D7;', paddingTop:'50px;' }}
 				>
 					<Slide triggerOnce direction="down">
 						About Us
@@ -179,7 +170,7 @@ const About = () => {
 					</Slide> */}
 					</Grid>
 				</Grid>
-			</Paper>
+			</div>
 		</div>
 	);
 };

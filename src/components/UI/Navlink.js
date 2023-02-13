@@ -4,17 +4,21 @@ import styles from './Navlink.module.css';
 
 const Navlink = (props) => {
 	return (
-		<a
-			style={{
-				color: 'white',
-				fontSize: '20px',
-				textDecoration: 'none',
-				margin: 'auto',
-			}}
-			href={props.href}
-		>
-			{props.children}
-		</a>
+		<>
+			<a	id={props.id}
+				style={{
+					color: 'white',
+					fontSize: '20px',
+					textDecoration: 'none',
+					margin: 'auto',
+				}}
+				href={props.href}
+				onFocus={props.onFocus}
+				onClick={props.onClick}
+			>
+				{props.children}
+			</a>
+		</>
 	);
 };
 
