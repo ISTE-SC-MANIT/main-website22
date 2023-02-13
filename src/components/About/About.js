@@ -167,7 +167,7 @@ const About = () => {
 										key={index}
 										className={classes.pre}
 										animation="wave"
-										sx={{ backgroundColor: 'grey', opacity: '0.7' }}
+										sx={{ opacity: '0.7' }}
 									/>
 								))}
 							</div>

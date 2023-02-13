@@ -1,6 +1,6 @@
 import TeamPage from './pages/TeamPage';
 import HomePage from './pages/HomePage';
-
+import { useState } from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 const router = createBrowserRouter([
@@ -15,7 +15,15 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-	return <RouterProvider router={router} />;
+	const [ld, sld] = useState(true);
+	const spinner = document.getElementById('ctn-preloader');
+	if (spinner) {
+		setTimeout(() => {
+			spinner.style.display = 'none';
+			sld(false);
+		}, [9000]);
+	}
+	return !ld && <RouterProvider router={router} />;
 }
 
 export default App;
