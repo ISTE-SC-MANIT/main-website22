@@ -1,6 +1,6 @@
 .bg{
     width:100%;
-    height: 100vh;
+    min-height: 100vh;
     background-image: url("../../assets//Backgrounds/bg12.jpg");
         /* Set a specific height */
         min-height: 400px;
