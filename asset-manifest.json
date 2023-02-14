@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/main-website22/static/css/main.7cc4b165.css",
-    "main.js": "/main-website22/static/js/main.429419fc.js",
+    "main.css": "/main-website22/static/css/main.7b3bf917.css",
+    "main.js": "/main-website22/static/js/main.8dc70bf3.js",
     "static/js/787.0c4dd52e.chunk.js": "/main-website22/static/js/787.0c4dd52e.chunk.js",
     "static/media/Team.JPG": "/main-website22/static/media/Team.16f202e5b1622ab77a65.JPG",
     "static/media/yuvraj.jpg": "/main-website22/static/media/yuvraj.19b82fa5e1b756de182c.jpg",
@@ -30,8 +30,8 @@
     "static/media/megatrep.png": "/main-website22/static/media/megatrep.b745270e64cced81e3b0.png",
     "static/media/stand-out-stickers-logo.png": "/main-website22/static/media/stand-out-stickers-logo.2709ec07c7852ec14a2f.png",
     "static/media/anubhuti.png": "/main-website22/static/media/anubhuti.fbf727f83163e262e9d5.png",
+    "static/media/codathon.png": "/main-website22/static/media/codathon.fbf727f83163e262e9d5.png",
     "static/media/vidit.jpeg": "/main-website22/static/media/vidit.c1df1aae7d8c65c1efb7.jpeg",
-    "static/media/codathon.png": "/main-website22/static/media/codathon.89b8231e011dc8b3c4bc.png",
     "static/media/versionBeta.png": "/main-website22/static/media/versionBeta.89b8231e011dc8b3c4bc.png",
     "static/media/ISTElogo.svg": "/main-website22/static/media/ISTElogo.a74f1bcec9b36f8b044934b3c92f6b69.svg",
     "static/media/IMG_7748.PNG": "/main-website22/static/media/IMG_7748.af1d7781c1e2dbad0707.PNG",
@@ -52,12 +52,12 @@
     "static/media/solana-img-white.png": "/main-website22/static/media/solana-img-white.c65a43deed17c49a83a7.png",
     "static/media/tezos-logo-63E81F3064-seeklogo.com-removebg-preview (190).png": "/main-website22/static/media/tezos-logo-63E81F3064-seeklogo.com-removebg-preview (190).0e2f68ff3247aa3bc0ed.png",
     "index.html": "/main-website22/index.html",
-    "main.7cc4b165.css.map": "/main-website22/static/css/main.7cc4b165.css.map",
-    "main.429419fc.js.map": "/main-website22/static/js/main.429419fc.js.map",
+    "main.7b3bf917.css.map": "/main-website22/static/css/main.7b3bf917.css.map",
+    "main.8dc70bf3.js.map": "/main-website22/static/js/main.8dc70bf3.js.map",
     "787.0c4dd52e.chunk.js.map": "/main-website22/static/js/787.0c4dd52e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7cc4b165.css",
-    "static/js/main.429419fc.js"
+    "static/css/main.7b3bf917.css",
+    "static/js/main.8dc70bf3.js"
   ]
 }
