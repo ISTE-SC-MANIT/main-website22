@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import Navlink from './Navlink';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 import ISTElogo from '../../assets/ISTElogo.svg';
 import ham from '../../assets/ham.png';
@@ -10,15 +10,18 @@ import About from '../About/About';
 import {CloseOutline} from 'react-ionicons';
 const Navbar = (props) => {
 	const [mobNav, setMobNav] = useState(false);
+	const navigate=useNavigate();
+
 	const hamClickHandler = (event) => {
 		event.preventDefault();
 		console.log(event.target.id);
 		if (mobNav === true) {
 			setMobNav(false);
+			
 		} else {
 			setMobNav(true);
 		}
-		return true;
+		return `/main-website22${event.target.dest}`;
 	};
 	const show=()=>{
 		setMobNav(true);

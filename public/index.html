@@ -156,7 +156,7 @@ margin:24px;
 
 			.ctn-preloader.dark .animation-preloader .txt-loading .letters-loading {
 				color: rgba(255, 255, 255, 0.2);
-				font-size: 4rem;
+				font-size: 3rem;
 			}
 
 			.ctn-preloader.dark
@@ -226,7 +226,11 @@ margin:24px;
 			border:2px solid white;
 			}
 
-			
+			@media(max-width: 600px){
+				.letters-loading{
+					font-size: 3rem;
+				}
+			}
 			@-webkit-keyframes spinner {
 				to {
 					-webkit-transform: rotateZ(360deg);

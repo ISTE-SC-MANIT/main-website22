@@ -12,9 +12,10 @@ const Navlink = (props) => {
 					textDecoration: 'none',
 					margin: 'auto',
 				}}
-				href={props.href}
-				onFocus={props.onFocus}
-				onClick={props.onClick}
+				href={props.onClick}
+				dest={props.href}
+				// onFocus={props.onFocus}
+				// onClick={props.onClick}
 			>
 				{props.children}
 			</a>
