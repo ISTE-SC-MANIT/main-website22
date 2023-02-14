@@ -188,8 +188,8 @@ const Sponsors = () => {
 		<div id="sponsors">
 			<Paper
 				sx={{
-					marginTop: '2rem',
-					marginBottom: '5rem',
+					paddingTop: '2rem',
+					paddingBottom: '5rem',
 					background: 'rgb(29 32 38)',
 				}}
 			>

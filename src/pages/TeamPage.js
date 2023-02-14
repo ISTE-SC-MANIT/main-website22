@@ -7,6 +7,8 @@ import data from '../assets/TeamData';
 
 import Footer from '../components/UI/Footer';
 
+import Nav1 from '../components/UI/Nav1';
+
 function parseImage(text) {
 	let i = text.indexOf('id');
 	let id = '';
@@ -124,9 +126,9 @@ const year = [
 const TeamPage = (props) => {
 	return (
 		<>
-			<Navbar />
+			<Nav1 />
 
-			<Paper sx={{ marginTop: '8rem' }}>
+			<Paper sx={{ marginTop: '100px',background:'transparent' }}>
 				{year.map((year, index) => (
 					<MainContainer year={year.year} data={year.data} />
 				))}

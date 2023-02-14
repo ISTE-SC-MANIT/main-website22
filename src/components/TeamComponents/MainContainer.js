@@ -50,13 +50,11 @@ const Container4 = (props) => {
 			</Typography>
 			<Grid
 				container
-				// rowSpacing={2}
-				// columnSpacing={2}
 				sx={{
 					justifyContent: 'center',
 					alignItems: 'center',
 					// padding: '2rem',
-					padding: '20px 200px',
+					padding: '0px 182px',
 					background: 'rgb(29 ,32, 38)',
 				}}
 			>
@@ -68,47 +66,6 @@ const Container4 = (props) => {
 						style={{ marginLeft: '1.87rem', margin: '1.3rem' }}
 					>
 						<Grid item key={index} spacing={2} gap={2} className={classes.card}>
-							{/* <Card sx={{}}>
-								{loading ? (
-									<div
-										style={{
-											display: 'flex',
-											justifyContent: 'center',
-										}}
-									>
-										<CardMedia
-											component={'img'}
-											height="250px"
-											image={`${person.imgsrc}`}
-											sx={{
-												// width: '60%',
-												// height: '250px',
-												'@media(max-width:450px)': {
-													height: '185px',
-												},
-												objectFit: 'cover',
-											}}
-										></CardMedia>
-									</div>
-								) : (
-									<Skeleton
-										variant="rectangular"
-										width={'100%'}
-										height={'100%'}
-										animation="wave"
-									></Skeleton>
-								)}
-
-								<CardActions
-									sx={{ justifyContent: 'center', flexDirection: 'column' }}
-								>
-									<Typography>{person.name}</Typography>
-									<Button sx={{ textAlign: 'center' }}>
-										{person.vertical}
-									</Button>
-									
-								</CardActions>
-							</Card> */}
 							<div
 								className="card-profile"
 								style={{

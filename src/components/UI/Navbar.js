@@ -14,7 +14,7 @@ const Navbar = (props) => {
 
 	const hamClickHandler = (event) => {
 		event.preventDefault();
-		console.log(event.target.id);
+		console.log(event.target);
 		if (mobNav === true) {
 			setMobNav(false);
 			
@@ -23,6 +23,11 @@ const Navbar = (props) => {
 		}
 		return `/main-website22${event.target.dest}`;
 	};
+
+	const navClickHandler=(event)=>{
+		console.log(event.target);
+		return event.target.href;
+	}
 	const show = () => {
 		setMobNav(true);
 	};
@@ -38,9 +43,9 @@ const Navbar = (props) => {
 				>
 					Home
 				</Link>
-				<Navlink href="/main-website22#about">About us</Navlink>
-				<Navlink href="/main-website22#events">Events</Navlink>
-				<Navlink href="/main-website22#sponsors">Sponsors</Navlink>
+				<Navlink onClick={navClickHandler} href="/main-website22#about">About us</Navlink>
+				<Navlink onClick={navClickHandler} href="/main-website22#events">Events</Navlink>
+				<Navlink onClick={navClickHandler} href="/main-website22#sponsors">Sponsors</Navlink>
 				<Navlink>
 					<Link
 						to="/main-website22/team"
