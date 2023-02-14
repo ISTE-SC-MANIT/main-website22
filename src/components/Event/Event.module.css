@@ -4,13 +4,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 4px;
+    border-radius: 15px;
     z-index:20;
     margin-block-end: 1.5rem;
-    margin-inline: 1rem;
+    margin-inline: 2rem;
     background: none;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     animation: appear 2s;
+    padding-inline: 5px;
 }
 
 .eventStyle:hover{
@@ -26,13 +27,11 @@
 }
 .website {
     font-size: 20px;
-    padding-inline: 15px;
     padding-block: 10px;
-    border: 1px solid rgba(0, 140, 2, 0.527);
     border-radius: 3px;
     text-decoration: none;
-    color: white;
-    background-color: #e8be01;
+    color: rgb(0, 122, 204);
+    /* background-color: #e8be01; */
     width: 100%;
     text-align: center;
 }

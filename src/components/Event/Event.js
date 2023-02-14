@@ -23,7 +23,7 @@ const Event = (props) => {
 			/>
 
 
-			<div className={style.buttonContainer}>
+			 <div className={style.buttonContainer}>
 				<a
 					href={props.website}
 					target="_blank"
@@ -31,10 +31,17 @@ const Event = (props) => {
 				>
 					Visit Website
 				</a>
-				<Button name={props.name} onClick={props.onClick}>
+				<a
+					name={props.name}
+					onClick={props.onClick}
+					className={style.website}
+				>
 					Know More
-				</Button>
-			</div>
+				</a>
+				{/* <Button name={props.name} onClick={props.onClick}>
+					Know More
+				</Button> */}
+			</div> 
 		</motion.div>
 	);
 };

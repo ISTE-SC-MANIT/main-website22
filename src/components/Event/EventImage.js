@@ -14,7 +14,7 @@ const EventImage = (props) => {
 	}, [window.scrollY]);
 	return (
 		<div name={props.name} className={style.eventImage} onClick={props.onClick}>
-			<img src={props.src} name={props.name} />
+			<img src={props.src} name={props.name} onClick={props.onClick} />
 		</div>
 	);
 };

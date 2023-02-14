@@ -14,10 +14,21 @@
 	padding-block: 0.5rem;
 	width: 100%;
 	margin-inline: auto;
-	background: url('../../assets/Backgrounds/bg5.jpg');
+	background: url('../../assets/Backgrounds/bg7.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+.bg {
+
+	background-image: url('../../assets/Backgrounds/bg3.jpg');
+	min-height: 500px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-block: 100px;
 }
 
 .heading {
