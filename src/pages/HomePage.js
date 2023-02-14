@@ -29,7 +29,7 @@ function App() {
 			<EventsContainer />
 			{/* </Slide> */}
 
-			<BreakLine />
+			{/* <BreakLine /> */}
 			{/* <Team/> */}
 			<Slide triggerOnce>
 				<Sponsors>{/* */}</Sponsors>
