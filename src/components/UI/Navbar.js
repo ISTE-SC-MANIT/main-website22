@@ -7,7 +7,7 @@ import ISTElogo from '../../assets/ISTElogo.svg';
 import ham from '../../assets/ham.png';
 import style from './Navbar.module.css';
 import About from '../About/About';
-import {CloseOutline} from 'react-ionicons';
+import { CloseOutline } from 'react-ionicons';
 const Navbar = (props) => {
 	const [mobNav, setMobNav] = useState(false);
 	const navigate=useNavigate();
@@ -23,9 +23,9 @@ const Navbar = (props) => {
 		}
 		return `/main-website22${event.target.dest}`;
 	};
-	const show=()=>{
+	const show = () => {
 		setMobNav(true);
-	}
+	};
 	return (
 		<div className={style.navbar}>
 			<div className={`${style['logo']} ${mobNav ? style['hide'] : ''}`}>
@@ -61,24 +61,51 @@ const Navbar = (props) => {
 					className={`${style.ham} ${style['align-left']}`}
 					onClick={hamClickHandler}
 				>
-					<CloseOutline
-						color="white" width="30px" height="30px"
-					/>
+					<CloseOutline color="white" width="30px" height="30px" />
 				</div>
-				<Navlink id="#home" onClick={hamClickHandler} href="/main-website22" onFocus={show}>
-					Home
+				<Navlink onClick={hamClickHandler}>
+					<Link
+						to="/main-website22"
+						href="/main-website22"
+						onFocus={show}
+						sx={{ color: 'white', textDecoration: 'none' }}
+					>
+						Home
+					</Link>
 				</Navlink>
-				<Navlink id="#about" onClick={hamClickHandler} href="/main-website22#about" onFocus={show}>
+				<Navlink
+					id="#about"
+					onClick={hamClickHandler}
+					href="/main-website22#about"
+					onFocus={show}
+				>
 					About us
 				</Navlink>
-				<Navlink id="#events" onClick={hamClickHandler} href="/main-website22#events" onFocus={show}>
+				<Navlink
+					id="#events"
+					onClick={hamClickHandler}
+					href="/main-website22#events"
+					onFocus={show}
+				>
 					Events
 				</Navlink>
-				<Navlink id="#sponsors" onClick={hamClickHandler} href="/main-website22#sponsors" onFocus={show}>
+				<Navlink
+					id="#sponsors"
+					onClick={hamClickHandler}
+					href="/main-website22#sponsors"
+					onFocus={show}
+				>
 					Sponsors
 				</Navlink>
-				<Navlink id="/team" onClick={hamClickHandler} href="/main-website22/team" onFocus={show}>
-					Our Team
+				<Navlink onClick={hamClickHandler}>
+					<Link
+						to="/main-website22/team"
+						href="/main-website22/team"
+						onFocus={show}
+						sx={{ color: 'white', textDecoration: 'none' }}
+					>
+						Our Team
+					</Link>
 				</Navlink>
 				<Navlink onClick={hamClickHandler} href="#footer" onFocus={show}>
 					Contact Us

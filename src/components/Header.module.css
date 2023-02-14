@@ -9,7 +9,7 @@
 	display: flex;
 	flex-direction: column;
 
-	background-image: url("../assets/Backgrounds/bg8.jpeg");
+	background-image: url('../assets/Backgrounds/bg13.jpg');
 
 	/* Set a specific height */
 	min-height: 400px;
@@ -28,11 +28,12 @@
 	animation: appearHead 1s;
 }
 
-.appearAnim{
+.appearAnim {
 	animation: appearHead 1s;
 }
 
-h1, h3{
+h1,
+h3 {
 	margin: 0;
 	padding: 0;
 }

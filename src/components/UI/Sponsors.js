@@ -178,10 +178,11 @@ const Sponsors = () => {
 	const [loading, setLoading] = useState(false);
 
 	useEffect(() => {
-		if (window.scrollY >= 2100)
+		if (window.scrollY > 2000) {
 			setTimeout(() => {
 				setLoading(true);
 			}, 5000);
+		}
 	});
 	return (
 		<div id="sponsors">
