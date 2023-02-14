@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/main-website22/static/css/main.5884eab0.css",
+    "main.css": "/main-website22/static/css/main.51e21c86.css",
     "main.js": "/main-website22/static/js/main.8dc70bf3.js",
     "static/js/787.0c4dd52e.chunk.js": "/main-website22/static/js/787.0c4dd52e.chunk.js",
     "static/media/Team.JPG": "/main-website22/static/media/Team.16f202e5b1622ab77a65.JPG",
@@ -13,7 +13,7 @@
     "static/media/ashay.jpg": "/main-website22/static/media/ashay.a8929fb03da23a3d040a.jpg",
     "static/media/vibhuti.jpg": "/main-website22/static/media/vibhuti.b07382ec9d4957caab24.jpg",
     "static/media/techcryptors.png": "/main-website22/static/media/techcryptors.f58e78bc484b90d7f375.png",
-    "static/media/bg3.jpg": "/main-website22/static/media/bg3.2f57a37a5ca94fb15d22.jpg",
+    "static/media/bg5.jpg": "/main-website22/static/media/bg5.d8f07162ac042b8687b7.jpg",
     "static/media/jatin.jpg": "/main-website22/static/media/jatin.df09c3338b47272bb602.jpg",
     "static/media/DanishaRaj.jpg": "/main-website22/static/media/DanishaRaj.ffe0005c77ed8fe7c63b.jpg",
     "static/media/Diginique Techlabs.png": "/main-website22/static/media/Diginique Techlabs.d1994800f7fe19736ab5.png",
@@ -52,12 +52,12 @@
     "static/media/solana-img-white.png": "/main-website22/static/media/solana-img-white.c65a43deed17c49a83a7.png",
     "static/media/tezos-logo-63E81F3064-seeklogo.com-removebg-preview (190).png": "/main-website22/static/media/tezos-logo-63E81F3064-seeklogo.com-removebg-preview (190).0e2f68ff3247aa3bc0ed.png",
     "index.html": "/main-website22/index.html",
-    "main.5884eab0.css.map": "/main-website22/static/css/main.5884eab0.css.map",
+    "main.51e21c86.css.map": "/main-website22/static/css/main.51e21c86.css.map",
     "main.8dc70bf3.js.map": "/main-website22/static/js/main.8dc70bf3.js.map",
     "787.0c4dd52e.chunk.js.map": "/main-website22/static/js/787.0c4dd52e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5884eab0.css",
+    "static/css/main.51e21c86.css",
     "static/js/main.8dc70bf3.js"
   ]
 }
