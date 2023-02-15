@@ -178,18 +178,16 @@ const Sponsors = () => {
 	const [loading, setLoading] = useState(false);
 
 	useEffect(() => {
-		if (window.scrollY > 2000) {
-			setTimeout(() => {
-				setLoading(true);
-			}, 5000);
-		}
+		setTimeout(() => {
+			setLoading(true);
+		}, 14000);
 	});
 	return (
 		<div id="sponsors">
 			<Paper
 				sx={{
-					marginTop: '2rem',
-					marginBottom: '5rem',
+					paddingTop: '2rem',
+					paddingBottom: '5rem',
 					background: 'rgb(29 32 38)',
 				}}
 			>

@@ -16,10 +16,14 @@ import Team from '../components/Team/Team';
 
 import TeamPage from '../pages/TeamPage';
 
+import Nav1 from '../components/UI/Nav1';
+
 function App() {
 	return (
 		<>
-			<Navbar />
+			{/* <Navbar /> */}
+
+			<Nav1 />
 			<Header></Header>
 			{/* <Slide triggerOnce direction="up"> */}
 			{/* <Slide></Slide> */}
@@ -34,9 +38,8 @@ function App() {
 			<Slide triggerOnce>
 				<Sponsors>{/* */}</Sponsors>
 			</Slide>
-			<Slide triggerOnce direction="left">
-				<Footer></Footer>
-			</Slide>
+
+			<Footer></Footer>
 		</>
 	);
 }

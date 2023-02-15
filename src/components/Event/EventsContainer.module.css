@@ -22,7 +22,7 @@
 
 .bg {
 
-	background-image: url('../../assets/Backgrounds/bg3.jpg');
+	background-image: url('../../assets/Backgrounds/bg5.jpg');
 	min-height: 500px;
 	background-attachment: fixed;
 	background-position: center;
@@ -34,7 +34,7 @@
 .heading {
 	text-align: center;
 	padding-top: 100px;
-	color: rgb(68, 155, 246);
+	color: rgb(0, 84, 173);
 	font-size: 54px;
 	font-weight: 400;
 }

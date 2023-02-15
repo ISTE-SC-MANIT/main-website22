@@ -50,13 +50,11 @@ const Container4 = (props) => {
 			</Typography>
 			<Grid
 				container
-				// rowSpacing={2}
-				// columnSpacing={2}
 				sx={{
 					justifyContent: 'center',
 					alignItems: 'center',
 					// padding: '2rem',
-					padding: '20px 200px',
+					padding: '0px 182px',
 					background: 'rgb(29 ,32, 38)',
 				}}
 			>
@@ -67,8 +65,8 @@ const Container4 = (props) => {
 						damping={0.7}
 						style={{ marginLeft: '1.87rem', margin: '1.3rem' }}
 					>
-						<Grid item key={index} className={classes.card}>
-							{/* <Card sx={{}}>
+						{/* <Grid item key={index} className={classes.card}> */}
+						{/* <Card sx={{}}>
 								{loading ? (
 									<div
 										style={{
@@ -109,6 +107,7 @@ const Container4 = (props) => {
 									
 								</CardActions>
 							</Card> */}
+						<Grid item key={index} spacing={2} gap={2} className={classes.card}>
 							<div
 								className="card-profile"
 								style={{

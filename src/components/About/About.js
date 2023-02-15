@@ -47,13 +47,11 @@ const About = () => {
 	const [loading, setLoading] = useState(false);
 
 	return (
-		<div id="about">
-			<div
-				className={styles.bg}
-			>
+		<div id="about" style={{ minHeight: '100vh' }}>
+			<div className={styles.bg}>
 				<Typography
 					variant="h3"
-					sx={{ textAlign: 'center', color: '#0270D7;', paddingTop:'50px;' }}
+					sx={{ textAlign: 'center', color: '#0270D7;', paddingTop: '50px;' }}
 				>
 					<Slide triggerOnce direction="down">
 						About Us
@@ -87,24 +85,21 @@ const About = () => {
 						}}
 					>
 						<Card>
-							<Slide direction="left" triggerOnce setView={true}>
-								{' '}
-								<Fade>
-									<CardMedia
-										sx={{
-											display: 'flex',
-											justifyContent: 'center',
-											alignItems: 'center',
-										}}
-									>
-										<img
-											src={`${AboutImgPath}`}
-											style={{ width: '100%', height: '70%' }}
-											alt=""
-										/>
-									</CardMedia>
-								</Fade>
-							</Slide>
+							<Fade>
+								<CardMedia
+									sx={{
+										display: 'flex',
+										justifyContent: 'center',
+										alignItems: 'center',
+									}}
+								>
+									<img
+										src={`${AboutImgPath}`}
+										style={{ width: '100%', height: '70%' }}
+										alt=""
+									/>
+								</CardMedia>
+							</Fade>
 						</Card>
 					</Grid>
 					<Grid
