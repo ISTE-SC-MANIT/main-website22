@@ -126,7 +126,7 @@ const TeamPage = (props) => {
 		<>
 			<Navbar />
 
-			<Paper sx={{ marginTop: '8rem' }}>
+			<Paper sx={{ marginTop: '4rem', backgroundColor: 'transparent' }}>
 				{year.map((year, index) => (
 					<MainContainer year={year.year} data={year.data} />
 				))}

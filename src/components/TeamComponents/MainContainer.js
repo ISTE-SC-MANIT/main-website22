@@ -67,7 +67,7 @@ const Container4 = (props) => {
 						damping={0.7}
 						style={{ marginLeft: '1.87rem', margin: '1.3rem' }}
 					>
-						<Grid item key={index} spacing={2} gap={2} className={classes.card}>
+						<Grid item key={index} className={classes.card}>
 							{/* <Card sx={{}}>
 								{loading ? (
 									<div
