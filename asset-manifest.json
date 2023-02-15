@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/main-website22/static/css/main.0d9691f3.css",
-    "main.js": "/main-website22/static/js/main.540002e7.js",
+    "main.css": "/main-website22/static/css/main.920c191a.css",
+    "main.js": "/main-website22/static/js/main.2b5f59c3.js",
     "static/js/787.0c4dd52e.chunk.js": "/main-website22/static/js/787.0c4dd52e.chunk.js",
     "static/media/Team.JPG": "/main-website22/static/media/Team.16f202e5b1622ab77a65.JPG",
     "static/media/yuvraj.jpg": "/main-website22/static/media/yuvraj.19b82fa5e1b756de182c.jpg",
@@ -40,6 +40,7 @@
     "static/media/myways-removebg-preview.png": "/main-website22/static/media/myways-removebg-preview.04043addd93588176152.png",
     "static/media/ELearnmarket Logo.png": "/main-website22/static/media/ELearnmarket Logo.b85ee33dc2fd80ab2868.png",
     "static/media/lnguify-white-2.png": "/main-website22/static/media/lnguify-white-2.fdfb944734e155d123a5.png",
+    "static/media/404.jpeg": "/main-website22/static/media/404.d60c6fecbdea3957bf21.jpeg",
     "static/media/conding-ninja-white.png": "/main-website22/static/media/conding-ninja-white.31817718afcec832f733.png",
     "static/media/ekeeda-logo.png": "/main-website22/static/media/ekeeda-logo.761dd70f53b49c55be18.png",
     "static/media/echo-white.png": "/main-website22/static/media/echo-white.4df41c0ce736883c9b1f.png",
@@ -52,12 +53,12 @@
     "static/media/solana-img-white.png": "/main-website22/static/media/solana-img-white.c65a43deed17c49a83a7.png",
     "static/media/tezos-logo-63E81F3064-seeklogo.com-removebg-preview (190).png": "/main-website22/static/media/tezos-logo-63E81F3064-seeklogo.com-removebg-preview (190).0e2f68ff3247aa3bc0ed.png",
     "index.html": "/main-website22/index.html",
-    "main.0d9691f3.css.map": "/main-website22/static/css/main.0d9691f3.css.map",
-    "main.540002e7.js.map": "/main-website22/static/js/main.540002e7.js.map",
+    "main.920c191a.css.map": "/main-website22/static/css/main.920c191a.css.map",
+    "main.2b5f59c3.js.map": "/main-website22/static/js/main.2b5f59c3.js.map",
     "787.0c4dd52e.chunk.js.map": "/main-website22/static/js/787.0c4dd52e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0d9691f3.css",
-    "static/js/main.540002e7.js"
+    "static/css/main.920c191a.css",
+    "static/js/main.2b5f59c3.js"
   ]
 }
