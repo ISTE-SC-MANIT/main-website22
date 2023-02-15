@@ -11,8 +11,7 @@ import { useMediaQuery } from '@mui/material';
 import { Fade, Slide } from 'react-awesome-reveal';
 import { Skeleton } from '@mui/material';
 import { makeStyles } from '@material-ui/styles';
-
-import styles from './About.module.css';
+import './About.css';
 
 const useStyles = makeStyles({
 	root: {
@@ -48,7 +47,7 @@ const About = () => {
 
 	return (
 		<div id="about" style={{ minHeight: '100vh' }}>
-			<div className={styles.bg}>
+			<div className="bg___">
 				<Typography
 					variant="h3"
 					sx={{ textAlign: 'center', color: '#0270D7;', paddingTop: '50px;' }}
