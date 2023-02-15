@@ -28,6 +28,11 @@ const useStyles = makeStyles({
 	Name: {
 		marginTop: '10px',
 	},
+	hover: {
+		'&:hover': {
+			backgroundColor: 'rgb(7, 177, 77, 0.42)',
+		},
+	},
 });
 const Container4 = (props) => {
 	// console.log(props.data);
@@ -54,6 +59,7 @@ const Container4 = (props) => {
 					justifyContent: 'center',
 					alignItems: 'center',
 					// padding: '2rem',
+					columnGap: '100px',
 					padding: '0px 182px',
 					background: 'rgb(29 ,32, 38)',
 				}}
@@ -63,7 +69,7 @@ const Container4 = (props) => {
 						triggerOnce
 						direction="up"
 						damping={0.7}
-						style={{ marginLeft: '1.87rem', margin: '1.3rem' }}
+						// style={{ marginLeft: '1.87rem', margin: '1.3rem' }}
 					>
 						{/* <Grid item key={index} className={classes.card}> */}
 						{/* <Card sx={{}}>
@@ -118,7 +124,7 @@ const Container4 = (props) => {
 							>
 								<div className="profileImage">
 									<img
-										className="image"
+										className={('image', 'hover')}
 										src={person.imgsrc}
 										alt=""
 										style={{
@@ -144,7 +150,8 @@ const Container4 = (props) => {
 										style={{
 											color: 'white',
 											textAlign: 'center',
-											fontSize: '16px',
+											fontSize: '13px',
+											fontWeight: 'bold',
 											marginBottom: '2px',
 											opacity: '0.9',
 											lineHeight: '20px',

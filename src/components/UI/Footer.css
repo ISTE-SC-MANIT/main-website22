@@ -162,7 +162,7 @@
 
 .social-link-container .icon {
 	position: relative;
-	width: 50px;
+	width: 60%;
 	height: 50px;
 	padding: 0;
 	border-radius: 50px;
@@ -195,17 +195,17 @@
 
 .icon:hover {
 	background: #e60073;
-	box-shadow: 0 0 20px #e60073;
+	/* box-shadow: 0 0 0px #e60073; */
 }
 
 .icon:hover:nth-child(2) {
 	background: #1877f2;
-	box-shadow: 0 0 20px #1877f2;
+	/* box-shadow: 0 0 20px #1877f2; */
 }
 
 .icon:hover:nth-child(3) {
 	background: #0e76a8;
-	box-shadow: 0 0 20px #0e76a8;
+	/* box-shadow: 0 0 20px #0e76a8; */
 }
 
 .icon i {
@@ -217,18 +217,18 @@
 }
 
 .instagram:hover {
-	background: #e60073;
-	box-shadow: 0 0 20px #e60073;
+	color: #e60073;
+	box-shadow: 0 0 0px #e60073;
 }
 
 .facebook:hover {
-	background: #1877f2;
-	box-shadow: 0 0 20px #1877f2;
+	color: #1877f2;
+	box-shadow: 0 0 0px #1877f2;
 }
 
 .linkedin:hover {
-	background: #0e76a8;
-	box-shadow: 0 0 20px #0e76a8;
+	color: #0e76a8;
+	/* box-shadow: 0 0 0px #0e76a8; */
 }
 
 @media (max-width: 800px) {

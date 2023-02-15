@@ -21,7 +21,6 @@
 }
 
 .bg {
-
 	background-image: url('../../assets/Backgrounds/bg5.jpg');
 	min-height: 500px;
 	background-attachment: fixed;
@@ -33,7 +32,7 @@
 
 .heading {
 	text-align: center;
-	padding-top: 100px;
+	/* padding-top: 100px; */
 	color: rgb(0, 84, 173);
 	font-size: 54px;
 	font-weight: 400;

@@ -98,19 +98,17 @@ const Footer = (props) => {
 			</div>
 			<div className="line"></div>
 			<div className="footer-block">
-				<span className="center-text">
-					Social Links
-				</span>
+				<span className="center-text">Social Links</span>
 				<div className="social-icon">
 					<div className="icon">
 						<a href="https://www.instagram.com/istemanit" target="_blank">
-							<LogoInstagram color={'white'} height="50px" width="50px" />
+							<LogoInstagram color={'white'} height="40px" width="40px" />
 						</a>
 					</div>
 					<div className="icon">
 						<a href="https://www.facebook.com/ISTESCMANIT" target="_blank">
 							{/* <i className="fab fa-facebook fa-2x"></i> */}
-							<LogoFacebook color={'white'} height="50px" width="50px" />
+							<LogoFacebook color={'white'} height="40px" width="40px" />
 						</a>
 					</div>
 					<div className="icon">
@@ -118,7 +116,7 @@ const Footer = (props) => {
 							href="https://www.linkedin.com/company/iste-sc-manit"
 							target="_blank"
 						>
-							<LogoLinkedin color={'white'} height="50px" width="50px" />
+							<LogoLinkedin color={'white'} height="40px" width="40px" />
 						</a>
 					</div>
 				</div>

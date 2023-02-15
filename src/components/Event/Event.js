@@ -12,7 +12,7 @@ const Event = (props) => {
 	useEffect(() => {
 		setInterval(() => {
 			setLoad(1);
-		}, 5000);
+		}, 8000);
 	});
 
 	return (
