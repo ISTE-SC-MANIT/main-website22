@@ -2,7 +2,7 @@ import TeamPage from './pages/TeamPage';
 import HomePage from './pages/HomePage';
 import { useState } from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-
+import NotFound from './components/UI/NotFound';
 const router = createBrowserRouter([
 	{
 		path: '/main-website22/',
@@ -11,6 +11,10 @@ const router = createBrowserRouter([
 	{
 		path: '/main-website22/team',
 		element: <TeamPage />,
+	},
+	{
+		path: '*',
+		element: <NotFound></NotFound>,
 	},
 ]);
 

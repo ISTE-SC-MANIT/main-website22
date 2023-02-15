@@ -194,7 +194,7 @@ const Sponsors = () => {
 				<Typography
 					variant="h3"
 					size="small"
-					sx={{ textAlign: 'center', color: '#0270D7', padding: '2rem' }}
+					sx={{ textAlign: 'center', color: '#f06f2b', padding: '2rem' }}
 				>
 					<Slide direction="down" triggerOnce>
 						Our Sponsors

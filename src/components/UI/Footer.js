@@ -16,7 +16,7 @@ const Footer = (props) => {
 				<div className="footer-left">
 					<div className="footer-block">
 						<h3 className="center-text">
-							<MapOutline color={'#0270D7'} height="40px" width="40px" />{' '}
+							<MapOutline color={'#f06f2b'} height="40px" width="40px" />{' '}
 							Address
 						</h3>
 						<p className="center-text">
@@ -37,7 +37,7 @@ const Footer = (props) => {
 					<div className="footer-block">
 						<h3 className="center-text">
 							<PhonePortraitOutline
-								color={'#0270D7'}
+								color={'#f06f2b'}
 								height="50px"
 								width="50px"
 							/>{' '}
@@ -80,7 +80,7 @@ const Footer = (props) => {
 				<div className="footer-right">
 					<div className="footer-block">
 						<h3 className="center-text">
-							<MailOpen color={'#0270D7'} height="40px" width="40px" /> Email
+							<MailOpen color={'#f06f2b'} height="40px" width="40px" /> Email
 							Address
 						</h3>
 						<p className="center-text" style={{ color: 'white' }}>
@@ -129,7 +129,7 @@ const Footer = (props) => {
 						href="https://istemanit.in/"
 						classNameName="text"
 						target="_blank"
-						style={{ textDecoration: 'none', color: '#0270D7' }}
+						style={{ textDecoration: 'none', color: '#f06f2b' }}
 					>
 						ISTE-SC MANIT
 					</a>

@@ -48,7 +48,7 @@ const Container4 = (props) => {
 			<Typography
 				variant="h4"
 				textAlign={'center'}
-				sx={{ background: 'rgb(29 ,32, 38)', color: '#0270d7' }}
+				sx={{ background: 'rgb(29 ,32, 38)', color: '#f06f2b' }}
 				className={classes.heading__}
 			>
 				{props.year} Year

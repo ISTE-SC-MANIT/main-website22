@@ -50,7 +50,7 @@ const About = () => {
 			<div className="bg___">
 				<Typography
 					variant="h3"
-					sx={{ textAlign: 'center', color: '#0270D7;', paddingTop: '50px;' }}
+					sx={{ textAlign: 'center', color: '#f06f2b;', paddingTop: '50px;' }}
 				>
 					<Slide triggerOnce direction="down">
 						About Us

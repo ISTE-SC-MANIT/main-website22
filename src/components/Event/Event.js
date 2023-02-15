@@ -25,6 +25,7 @@ const Event = (props) => {
 			{load ? (
 				<div>
 					<Slide
+						triggerOnce
 						direction={props.name % 2 === 0 ? 'left' : 'right'}
 						damping={0.6}
 						sx={{ width: '100%' }}

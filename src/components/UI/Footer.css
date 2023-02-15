@@ -93,7 +93,7 @@
 }
 
 .footer-block p:hover {
-	color: #0270d7;
+	color: #f06f2b;
 	transform: scale(1.01);
 }
 
@@ -135,7 +135,7 @@
 } */
 .conduct-block a:hover {
 	transform: scale(1.01);
-	color: #0270d7;
+	color: #f06f2b;
 }
 
 .center-text-button {
@@ -272,7 +272,7 @@ h3 {
 	width: 70%;
 	margin-block: none;
 	margin-inline: 5%;
-	background-color: #0270d7;
+	background-color: #f06f2b;
 	height: 1px;
 }
 
