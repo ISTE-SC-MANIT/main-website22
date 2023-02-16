@@ -25,7 +25,7 @@ function App() {
 		setTimeout(() => {
 			spinner.style.display = 'none';
 			sld(false);
-		}, [1000]);
+		}, [8000]);
 	}
 	return !ld && <RouterProvider router={router} />;
 }
