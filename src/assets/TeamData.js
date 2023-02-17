@@ -574,7 +574,7 @@ const data = [
 		year: '3rd',
 		vertical: 'Team Manager',
 		linkedinProfile: 'https://www.linkedin.com/in/pranav-garg-186292206',
-		facebookProfile: 'pranav_garg5@yahoo.com',
+
 		githubProfile: 'https://github.com/Pranav-Garg5',
 		photo: 'https://drive.google.com/open?id=1RhN26ouZssXEZxPq88Sj4Oh9xNi1JgH-',
 	},
