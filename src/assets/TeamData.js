@@ -609,7 +609,7 @@ const data = [
 		timestamp: '2022-11-14T03:59:41.664Z',
 		name: 'Soumya Agrawal ',
 		year: '3rd',
-		vertical: 'Executive',
+		vertical: 'Quizzing',
 		linkedinProfile: 'https://www.linkedin.com/in/soumya-agrawal-ab1984202',
 		instagramProfile: 'https://www.instagram.com/soumyx._.agrawal/?hl=en',
 		twitterProfile: 'https://twitter.com/Soumy_16',

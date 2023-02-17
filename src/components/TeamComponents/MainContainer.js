@@ -113,7 +113,13 @@ const Container4 = (props) => {
 									
 								</CardActions>
 							</Card> */}
-						<Grid item key={index} spacing={2} gap={2} className={classes.card}>
+						<Grid
+							item
+							key={index}
+							spacing={2}
+							gap={2}
+							className={(classes.card, 'profileImage')}
+						>
 							<div
 								className="card-profile"
 								style={{
@@ -157,7 +163,9 @@ const Container4 = (props) => {
 											lineHeight: '20px',
 										}}
 									>
-										{person.vertical}
+										{person.vertical === 'Quizzing'
+											? 'Team Member'
+											: `${person.vertical}`}
 									</p>
 								</div>
 								<div>
