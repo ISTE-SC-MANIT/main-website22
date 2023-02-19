@@ -5,11 +5,11 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import NotFound from './components/UI/NotFound';
 const router = createBrowserRouter([
 	{
-		path: '/main-website22/',
+		path: '/',
 		element: <HomePage />,
 	},
 	{
-		path: '/main-website22/team',
+		path: '/team',
 		element: <TeamPage />,
 	},
 	{

@@ -30,23 +30,23 @@ const navItems = [
 const x = [
 	{
 		name: 'Home',
-		dest: '/main-website22#home',
+		dest: '#home',
 	},
 	{
 		name: 'About us',
-		dest: '/main-website22#about',
+		dest: '#about',
 	},
 	{
 		name: 'Events',
-		dest: '/main-website22#events',
+		dest: '#events',
 	},
 	{
 		name: 'Sponsors',
-		dest: '/main-website22#sponsors',
+		dest: '#sponsors',
 	},
 	{
 		name: 'Our Team',
-		dest: '/main-website22/team',
+		dest: '/team',
 	},
 	{
 		name: 'Contact Us',
