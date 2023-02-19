@@ -574,7 +574,7 @@ const data = [
 		year: '3rd',
 		vertical: 'Team Manager',
 		linkedinProfile: 'https://www.linkedin.com/in/pranav-garg-186292206',
-		facebookProfile: 'pranav_garg5@yahoo.com',
+
 		githubProfile: 'https://github.com/Pranav-Garg5',
 		photo: 'https://drive.google.com/open?id=1RhN26ouZssXEZxPq88Sj4Oh9xNi1JgH-',
 	},
@@ -609,7 +609,7 @@ const data = [
 		timestamp: '2022-11-14T03:59:41.664Z',
 		name: 'Soumya Agrawal ',
 		year: '3rd',
-		vertical: 'Executive',
+		vertical: 'Quizzing',
 		linkedinProfile: 'https://www.linkedin.com/in/soumya-agrawal-ab1984202',
 		instagramProfile: 'https://www.instagram.com/soumyx._.agrawal/?hl=en',
 		twitterProfile: 'https://twitter.com/Soumy_16',
