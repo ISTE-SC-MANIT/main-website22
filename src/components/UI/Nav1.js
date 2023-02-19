@@ -30,7 +30,7 @@ const navItems = [
 const x = [
 	{
 		name: 'Home',
-		dest: '#home',
+		dest: '/',
 	},
 	{
 		name: 'About us',
